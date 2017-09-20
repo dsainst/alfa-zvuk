@@ -36,7 +36,8 @@ gulp.task('css', function () {
         }))
         .pipe(concatCss("style.min.css"))
         .pipe(minifyCss({compatibility: 'ie8'}))
-        .pipe(gulp.dest('tpl/css/'));
+        .pipe(gulp.dest('tpl/css/'))
+        .pipe(livereload()); // inject into browsers;
 });
 // html process...
 gulp.task('rev_append', function () {

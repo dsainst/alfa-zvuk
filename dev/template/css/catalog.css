@@ -150,7 +150,7 @@ body {
   width: 33px;
   height: 33px;
   object-fit: contain;
-  margin: 0 15px 0;
+  margin: 0 15px 0 0;
   display: inline-block;
   float: left;
 }
@@ -166,7 +166,7 @@ body {
   border-bottom: 0;
 }
 #content .sidebar .head {
-  border-radius: 4px;
+  border-radius: 4px 4px 0 0;
   background-color: #e8e8e8;
   padding: 16px 21px;
   height: 54px;
@@ -194,6 +194,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  border-bottom: solid 1px #e8e8e8;
 }
 #content .sidebar ul li a {
   font-size: 15px;
@@ -202,11 +203,11 @@ body {
   text-decoration: none;
   display: block;
   padding: 16px 60px 16px 20px;
-  border-bottom: solid 1px #e8e8e8;
   position: relative;
+  border-left: 2px solid transparent;
 }
 #content .sidebar ul li a:hover {
-  border-color: #eb2329;
+  border-left: 2px solid #eb2329;
 }
 #content .sidebar ul li a span {
   padding: 3px 8px;
@@ -233,12 +234,155 @@ body {
   background-color: #e8e8e8;
   margin-bottom: 30px;
 }
+#content .summary .item-block,
 #content .catalog .item-block {
   width: 190px;
+  position: relative;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
+  border-bottom: 0;
+  display: inline-block;
+  float: left;
+  margin: 0 17px 60px;
+  cursor: pointer;
 }
+#content .summary .item-block:last-child,
+#content .catalog .item-block:last-child,
+#content .summary .item-block:nth-child(4n+4),
+#content .catalog .item-block:nth-child(4n+4) {
+  margin-right: 0;
+  clear: right;
+}
+#content .summary .item-block:first-child,
+#content .catalog .item-block:first-child,
+#content .summary .item-block:nth-child(4n+5),
+#content .catalog .item-block:nth-child(4n+5) {
+  margin-left: 0;
+  clear: left;
+}
+#content .summary .item-block .image,
 #content .catalog .item-block .image {
   text-align: center;
-  display: table-cell;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+#content .summary .item-block .image img,
+#content .catalog .item-block .image img {
+  max-width: 100%;
+  height: auto;
+}
+#content .summary .item-block .name,
+#content .catalog .item-block .name {
+  font-size: 14px;
+  text-align: center;
+  color: #221e1f;
+  padding: 10px 10px 20px;
+  background: #ffffff;
+  z-index: 10;
+  position: relative;
+  border-bottom: 1px solid #e8e8e8;
+  border-radius: 4px;
+  min-height: 62px;
+}
+#content .summary .item-block .effect,
+#content .catalog .item-block .effect {
+  display: block;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  width: 90%;
+  position: absolute;
+  height: 40px;
+  left: 10px;
+  bottom: -5px;
+  z-index: 2;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+#content .summary .item-block .effect.two,
+#content .catalog .item-block .effect.two {
+  bottom: -10px;
+  width: 80%;
+  left: 20px;
+  z-index: 1;
+}
+#content .summary .item-block a,
+#content .catalog .item-block a {
+  text-decoration: none;
+}
+#content .summary .item-block:hover .name,
+#content .catalog .item-block:hover .name {
+  color: #c0050b;
+}
+#content .summary .item-block:hover .effect,
+#content .catalog .item-block:hover .effect {
+  bottom: -10px;
+}
+#content .summary .item-block:hover .effect.two,
+#content .catalog .item-block:hover .effect.two {
+  bottom: -20px;
+}
+#content .summary .item-block {
+  position: relative;
+  overflow: hidden;
+  border: solid 1px #e8e8e8;
+}
+#content .summary .item-block .image {
+  padding: 0;
+  overflow: hidden;
+}
+#content .summary .item-block .name {
+  position: absolute;
+  padding-top: 35px;
+  color: #221e1f;
+  max-height: 100px;
+  background: #ffffff;
+  bottom: 0;
+  transition: bottom 0.3s;
+}
+#content .summary .item-block .name img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  position: absolute;
+  left: 68px;
+  top: -27px;
+}
+#content .summary .item-block .name span {
+  display: block;
+  margin-bottom: 10px;
+}
+#content .summary .item-block .desc {
+  color: #221e1f;
+  position: absolute;
+  top: 180px;
+  background: #ffffff;
+  text-align: left;
+  font-size: 12px;
+  padding: 5px 10px;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 10;
+}
+#content .summary .item-block .desc:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.76);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.45), #ffffff);
+  width: 100%;
+  left: 0;
+}
+#content .summary .item-block:hover .name {
+  bottom: 90px;
+  border-bottom: 0;
+  transition: bottom 0.3s;
+}
+#content .summary .item-block:hover .desc {
+  display: block;
+  opacity: 1;
+  top: 90px;
+  transition: all 0.3s;
 }
