@@ -1,0 +1,244 @@
+html * {
+  box-sizing: border-box;
+}
+a,
+input,
+select,
+textarea {
+  outline: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 1200px;
+}
+.top {
+  height: 30px;
+  background: #e8e8e8;
+  margin-bottom: 20px;
+}
+.header {
+  background: none;
+  margin: 20px 0;
+  max-height: 200px;
+  overflow: hidden;
+  /* end of header */
+}
+.header .logo img {
+  width: 258px;
+  height: 65px;
+  object-fit: contain;
+}
+.header .logo p {
+  margin: 4px 0 0;
+  font-size: 15px;
+  color: #221e1f;
+}
+.header .btn-call a {
+  display: block;
+  width: 217px;
+  height: 54px;
+  border-radius: 4px;
+  border: solid 2px #eb2329;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #eb2329;
+  text-transform: uppercase;
+  line-height: 54px;
+  text-align: center;
+}
+.header .btn-call a:hover {
+  background-color: #c0050b;
+  border-color: #c0050b;
+  color: #ffffff;
+}
+.header .phone {
+  margin-bottom: 14px;
+  margin-left: 30px;
+}
+.header .phone span {
+  font-size: 28px;
+  font-weight: 300;
+  color: #221e1f;
+}
+.header .phone p {
+  margin: 0;
+  font-size: 15px;
+  color: #bbbbbb;
+}
+.header .phone:last-child {
+  margin-bottom: 0;
+}
+.header .search input {
+  margin-top: 13px;
+  width: 217px;
+  height: 54px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  padding: 11px 18px;
+  outline: none;
+}
+.header .cart .image {
+  width: 54px;
+  height: 54px;
+  background-color: #eb2329;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 64px;
+  float: left;
+  display: inline-block;
+  margin-right: 18px;
+}
+.header .cart .image img {
+  width: 25px;
+  height: 27px;
+  object-fit: contain;
+  border: 0;
+}
+.header .cart .info .price {
+  font-size: 28px;
+  font-weight: 300;
+  color: #221e1f;
+}
+.header .cart .info .price span {
+  font-size: 15px;
+  color: #bbbbbb;
+}
+.header .cart .info p {
+  margin: 0;
+  font-size: 15px;
+  color: #bbbbbb;
+}
+#top-menu {
+  background-color: #ffffff;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.11);
+  border: solid 0.5px #e8e8e8;
+}
+#top-menu ul {
+  display: inline-block;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#top-menu ul li {
+  display: inline-block;
+  margin: 0 auto;
+  list-style: none;
+  float: left;
+}
+#top-menu ul li a {
+  height: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #221e1f;
+  display: block;
+}
+#top-menu ul li a:hover {
+  border-bottom: 3px solid #eb2329;
+}
+#content {
+  /* end of content */
+}
+#content .h1 {
+  margin: 20px 0 10px;
+}
+#content .h1 img {
+  width: 33px;
+  height: 33px;
+  object-fit: contain;
+  margin: 0 15px 0;
+  display: inline-block;
+  float: left;
+}
+#content .h1 span {
+  font-size: 28px;
+  font-weight: 300;
+  color: #221e1f;
+  text-transform: uppercase;
+}
+#content .sidebar {
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  border-bottom: 0;
+}
+#content .sidebar .head {
+  border-radius: 4px;
+  background-color: #e8e8e8;
+  padding: 16px 21px;
+  height: 54px;
+  overflow: hidden;
+}
+#content .sidebar .head img {
+  width: 26px;
+  height: 21px;
+  object-fit: contain;
+  float: left;
+  margin-right: 10px;
+}
+#content .sidebar .head .h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #221e1f;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+#content .sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+#content .sidebar ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#content .sidebar ul li a {
+  font-size: 15px;
+  color: #221e1f;
+  -webkit-text-stroke: 0.5px #979797;
+  text-decoration: none;
+  display: block;
+  padding: 16px 60px 16px 20px;
+  border-bottom: solid 1px #e8e8e8;
+  position: relative;
+}
+#content .sidebar ul li a:hover {
+  border-color: #eb2329;
+}
+#content .sidebar ul li a span {
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #000000;
+  display: block;
+  float: right;
+  color: #ffffff;
+  position: absolute;
+  top: 30%;
+  right: 10px;
+}
+#pl {
+  height: 1900px;
+}
+#content .filter {
+  height: 54px;
+  border-radius: 4px;
+  background-color: #e8e8e8;
+  margin-bottom: 30px;
+}
+#content .catalog .item-block {
+  width: 190px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+}
+#content .catalog .item-block .image {
+  text-align: center;
+  display: table-cell;
+}

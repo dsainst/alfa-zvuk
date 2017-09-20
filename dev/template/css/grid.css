@@ -1,0 +1,89 @@
+.container_12 {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  position: relative;
+  display: inline;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.container_12 .grid_1 {
+  width: 82.5px;
+}
+.container_12 .grid_2 {
+  width: 180px;
+}
+.container_12 .grid_3 {
+  width: 277.5px;
+}
+.container_12 .grid_4 {
+  width: 375px;
+}
+.container_12 .grid_5 {
+  width: 472.5px;
+}
+.container_12 .grid_6 {
+  width: 570px;
+}
+.container_12 .grid_7 {
+  width: 667.5px;
+}
+.container_12 .grid_8 {
+  width: 765px;
+}
+.container_12 .grid_9 {
+  width: 862.5px;
+}
+.container_12 .grid_10 {
+  width: 960px;
+}
+.container_12 .grid_11 {
+  width: 1057.5px;
+}
+.container_12 .grid_12 {
+  width: 1155px;
+}
+.clear {
+  width: 0px;
+  display: block;
+  height: 0px;
+  visibility: hidden;
+  clear: both;
+  overflow: hidden;
+}
+.clearfix:after {
+  line-height: 0;
+  width: 0px;
+  display: block;
+  height: 0px;
+  visibility: hidden;
+  clear: both;
+  font-size: 0px;
+  content: ' ';
+}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+.fright {
+  float: right;
+}
