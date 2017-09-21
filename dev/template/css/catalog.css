@@ -273,6 +273,251 @@ body {
   font-size: 15px;
   color: #221e1f;
 }
+.video-block {
+  background: #4a524e;
+  padding: 60px;
+  overflow: hidden;
+}
+.video-block .head {
+  font-size: 28px;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.video-block .about p {
+  font-size: 15px;
+  color: #ffffff;
+}
+.video-block .alfazvuk-logo-min {
+  width: 51px;
+  height: 13px;
+  object-fit: contain;
+  border: solid 0.5px #979797;
+}
+.stat-section {
+  padding: 60px 0;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.stat-section .h1 {
+  margin: 20px 0 60px;
+  text-align: center;
+}
+.stat-section .h1 span {
+  font-size: 28px;
+  font-weight: 300;
+  color: #221e1f;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 30px;
+}
+.stat-section .h1 span:after {
+  content: '';
+  position: absolute;
+  left: -44px;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background: url("/tpl/img/svg/az.svg");
+}
+.stat-section .item .number {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #221e1f;
+}
+.stat-section .item .desc {
+  text-align: center;
+  font-size: 15px;
+  color: #221e1f;
+  max-width: 170px;
+  display: block;
+  margin: 0 auto;
+}
+.trust-section {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.trust-section .border {
+  padding: 60px 20px 40px;
+  margin: 0 30px;
+  border: solid 1px #e8e8e8;
+}
+.trust-section .h1 {
+  margin: 20px 0 60px;
+  text-align: center;
+}
+.trust-section .h1 span {
+  font-size: 28px;
+  font-weight: 300;
+  color: #221e1f;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 30px;
+}
+.trust-section .h1 span:after {
+  content: '';
+  position: absolute;
+  left: -44px;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background: url("/tpl/img/svg/az.svg");
+}
+.trust-section .carousel ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  float: left;
+}
+.trust-section .carousel span.left {
+  background: url("../img/slider/arrowNextL.svg");
+  width: 10px;
+  height: 16px;
+  display: block;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.trust-section .carousel span.right {
+  background: url("../img/slider/arrowNextL.svg");
+  width: 10px;
+  height: 16px;
+  transform: rotate(180deg);
+  display: block;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.trust-section .carousel .owl-prev {
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+.trust-section .carousel .owl-next {
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+.trust-section .carousel .owl-dots {
+  text-align: center;
+  margin-top: 80px;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  margin-left: -20px;
+  z-index: 10;
+}
+.trust-section .carousel .owl-dots .owl-dot {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #221e1f;
+  width: 10px;
+  height: 10px;
+}
+.trust-section .carousel .owl-dots .owl-dot:hover,
+.trust-section .carousel .owl-dots .owl-dot.active {
+  background: #eb2329;
+}
+.trust-section .carousel .show-all {
+  text-align: center;
+  margin-top: 120px;
+}
+.trust-section .carousel .show-all a {
+  display: block;
+  width: 217px;
+  height: 54px;
+  border-radius: 4px;
+  border: solid 2px #eb2329;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #eb2329;
+  text-transform: uppercase;
+  line-height: 54px;
+  text-align: center;
+  margin: 0 auto;
+}
+.trust-section .carousel .show-all a:hover {
+  background-color: #c0050b;
+  border-color: #c0050b;
+  color: #ffffff;
+}
+.service-section {
+  overflow: hidden;
+  background: #98161b;
+  padding: 60px 20px 40px;
+}
+.service-section .h1 {
+  margin: 20px 0 60px;
+  text-align: center;
+}
+.service-section .h1 span {
+  font-size: 28px;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 30px;
+}
+.service-section .h1 span:after {
+  content: '';
+  position: absolute;
+  left: -44px;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background: url("/tpl/img/svg/az.svg");
+}
+.service-section .item {
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.service-section .item .img {
+  height: 54px;
+  margin-bottom: 20px;
+}
+.service-section .item .img .hover {
+  display: none;
+}
+.service-section .item .head {
+  font-size: 15px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.service-section .item .desc {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #ffffff;
+}
+.service-section .item .more {
+  color: #221e1f;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 900;
+}
+.service-section .item .more:hover {
+  color: #ffffff;
+}
+.service-section .item:hover .img .hover {
+  display: block;
+}
+.service-section .item:hover .img .simple {
+  display: none;
+}
 #content {
   overflow: hidden;
 }

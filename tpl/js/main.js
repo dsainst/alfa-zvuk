@@ -1,1 +1,1 @@
-$(function(){});
+$(document).ready(function(){$(".owl-carousel").owlCarousel({margin:10,nav:!0,loop:!0,items:7,dots:!0,navText:['<span class="left"></span>','<span class="right"></span>']})});
