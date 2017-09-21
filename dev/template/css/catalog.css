@@ -225,8 +225,56 @@ body {
   top: 30%;
   right: 10px;
 }
-#pl {
-  height: 1900px;
+.about-section {
+  padding: 60px 0;
+  background: #e8e8e8;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.about-section .h1 {
+  margin: 20px 0 60px;
+  text-align: center;
+}
+.about-section span {
+  font-size: 28px;
+  font-weight: 300;
+  color: #221e1f;
+  text-transform: uppercase;
+  position: relative;
+}
+.about-section span:after {
+  content: '';
+  position: absolute;
+  left: -44px;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background: url("/tpl/img/svg/az.svg");
+}
+.about-section .item {
+  overflow: hidden;
+  padding: 30px 40px;
+  background: #ffffff;
+  min-height: 300px;
+  border-radius: 4px;
+}
+.about-section .item .icon {
+  margin-bottom: 40px;
+}
+.about-section .item .h3 {
+  font-size: 15px;
+  font-weight: 900;
+  color: #221e1f;
+  margin-bottom: 20px;
+}
+.about-section .item .desc {
+  font-size: 15px;
+  color: #221e1f;
+}
+#content {
+  overflow: hidden;
 }
 #content .filter {
   height: 54px;
@@ -236,7 +284,7 @@ body {
 }
 #content .summary .item-block,
 #content .catalog .item-block {
-  width: 190px;
+  width: 192px;
   position: relative;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -307,10 +355,6 @@ body {
   left: 20px;
   z-index: 1;
 }
-#content .summary .item-block a,
-#content .catalog .item-block a {
-  text-decoration: none;
-}
 #content .summary .item-block:hover .name,
 #content .catalog .item-block:hover .name {
   color: #c0050b;
@@ -322,6 +366,10 @@ body {
 #content .summary .item-block:hover .effect.two,
 #content .catalog .item-block:hover .effect.two {
   bottom: -20px;
+}
+#content .summary {
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 #content .summary .item-block {
   position: relative;
@@ -336,7 +384,7 @@ body {
   position: absolute;
   padding-top: 35px;
   color: #221e1f;
-  max-height: 100px;
+  max-height: 90px;
   background: #ffffff;
   bottom: 0;
   transition: bottom 0.3s;
@@ -354,6 +402,7 @@ body {
   margin-bottom: 10px;
 }
 #content .summary .item-block .desc {
+  width: 100%;
   color: #221e1f;
   position: absolute;
   top: 180px;
@@ -364,6 +413,7 @@ body {
   opacity: 0;
   transition: all 0.3s;
   z-index: 10;
+  height: 100px;
 }
 #content .summary .item-block .desc:after {
   content: '';
@@ -383,6 +433,6 @@ body {
 #content .summary .item-block:hover .desc {
   display: block;
   opacity: 1;
-  top: 90px;
+  top: 95px;
   transition: all 0.3s;
 }

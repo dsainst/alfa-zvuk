@@ -246,6 +246,53 @@ body {
   /* end of content */
 }
 
-#pl {
-  height: 1900px;
+.about-section {
+  padding: 60px 0;
+  background: @grey2;
+  overflow: hidden;
+  margin-top: 30px;
+  .h1 {
+    margin: 20px 0 60px;
+    text-align: center;
+    }
+    span {
+      font-size: 28px;
+      font-weight: 300;
+      color: @black2;
+      text-transform: uppercase;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        left: -44px;
+        top: 0;
+        display: block;
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        background: url("/tpl/img/svg/az.svg");
+    }
+  }
+
+  .item {
+    overflow: hidden;
+    padding: 30px 40px;
+    background: @white;
+    min-height: 300px;
+    border-radius: 4px;
+    .icon {
+      margin-bottom: 40px;
+    }
+    .h3 {
+      font-size: 15px;
+      font-weight: 900;
+      color: #221e1f;
+      margin-bottom: 20px;
+    }
+    .desc {
+      font-size: 15px;
+      color: #221e1f;
+    }
+  }
+
 }
