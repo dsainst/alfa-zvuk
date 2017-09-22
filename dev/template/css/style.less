@@ -73,6 +73,30 @@ body {
       outline: none;
     }
   }
+  .catalog {
+    overflow: hidden;
+    clear: both;
+    margin-top: 50px;
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 900;
+      color: #221e1f;
+      .hover {
+        opacity: 0;
+      }
+      &:hover {
+        color: #c0050b;
+        .hover {
+          opacity: 1;
+        }
+        .simple {
+          opacity: 0;
+          display: none;
+        }
+      }
+    }
+  }
   .cart {
     .image {
       width: 54px;
@@ -82,7 +106,7 @@ body {
       -moz-border-radius: 50%;
       border-radius: 50%;
       text-align: center;
-      line-height: 64px;
+      line-height: 67px;
       float: left;
       display: inline-block;
       margin-right: 18px;
@@ -200,9 +224,9 @@ body {
           display: block;
           padding: 16px 60px 16px 20px;
           position: relative;
-          border-left: 2px solid transparent;
-          &:hover {
-            border-left: 2px solid @red;
+          border-left: 3px solid transparent;
+          &.active, &:hover {
+            border-left: 3px solid @red;
           }
           span {
             padding: 3px 8px;
@@ -261,6 +285,7 @@ body {
     background: @white;
     min-height: 300px;
     border-radius: 4px;
+    cursor: pointer;
     .icon {
       margin-bottom: 40px;
     }
@@ -273,6 +298,15 @@ body {
     .desc {
       font-size: 15px;
       color: #221e1f;
+    }
+    &:hover {
+      background: #4a524e;
+      .h3 {
+        color: @white;
+      }
+      .desc {
+        color: @white;
+      }
     }
   }
 
@@ -590,9 +624,11 @@ body {
     float: left;
     display: inline-block;
     border-radius: 4px;
-    border: solid 1px #e8e8e8;
-    padding: 60px 80px;
+    padding: 40px 80px;
     width: 600px;
+    height: 387px;
+    background: url(../img/svg/combinedShape.svg);
+
     .desc {
       margin-bottom: 30px;
     }
@@ -626,12 +662,9 @@ body {
 .pub-section {
   overflow: hidden;
   padding: 40px 20px;
-  border-radius: 4px;
-  background-color: #e8e8e8;
   .h1 {
     margin: 20px 0 60px;
     text-align: center;
-
     span {
       font-size: 28px;
       font-weight: 300;
@@ -652,9 +685,15 @@ body {
       }
     }
   }
+  .pub-wrap {
+    padding: 50px 0;
+    border-radius: 4px;
+    background-color: #e8e8e8;
+  }
   .item {
-    width: 264px;
+    width: 334px;
     font-size: 15px;
+    padding-left: 60px;
     .head {
       font-weight: 900;
       color: #221e1f;
@@ -671,6 +710,19 @@ body {
       font-weight: 900;
       text-decoration: none;
       color: #221e1f;
+      .hover {
+        opacity: 0;
+      }
+      &:hover {
+        color: #c0050b;
+        .hover {
+          opacity: 1;
+        }
+        .simple {
+          opacity: 0;
+          display: none;
+        }
+      }
     }
   }
   .items {
@@ -746,4 +798,88 @@ footer {
       }
     }
   }
+  .social {
+    p {
+      color: @white;
+      font-size: 15px;
+      font-weight: 900;
+      margin: 0 0 30px;
+    }
+    .block {
+      clear: both;
+      margin-bottom: 12px;
+      margin-right: 20px;
+      display: inline-block;
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+      .hover {
+        display: none;
+
+      }
+      &:hover {
+        color: #c0050b;
+        .hover {
+          opacity: 1;
+          display: block;
+
+        }
+        .simple {
+          opacity: 0;
+          display: none;
+        }
+      }
+      a {
+        overflow: hidden;
+        display: block;
+        width: 54px;
+        height: 54px;
+        img {
+          width: 54px;
+          height: 54px;
+        }
+      }
+    }
+  }
+  .call {
+    overflow: hidden;
+    .img {
+      display: inline-block;
+      float: left;
+      margin-right: 15px;
+    }
+    p {
+      margin: 0;
+      color: @white;
+      width: 124px;
+      float: left;
+    }
+  }
+
+  .show-all {
+    text-align: left;
+    margin-top: 30px;
+    a {
+      display: block;
+      background: @white;
+      width: 217px;
+      height: 54px;
+      border-radius: 4px;
+      border: solid 2px #eb2329;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      color: #eb2329;
+      text-transform: uppercase;
+      line-height: 54px;
+      text-align: center;
+      margin: 0;
+      &:hover {
+        background-color: #c0050b;
+        border-color: #c0050b;
+        color: @white;
+      }
+    }
+  }
+
 }

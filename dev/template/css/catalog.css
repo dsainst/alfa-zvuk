@@ -59,6 +59,30 @@ body {
   padding: 11px 18px;
   outline: none;
 }
+.header .catalog {
+  overflow: hidden;
+  clear: both;
+  margin-top: 50px;
+}
+.header .catalog a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 900;
+  color: #221e1f;
+}
+.header .catalog a .hover {
+  opacity: 0;
+}
+.header .catalog a:hover {
+  color: #c0050b;
+}
+.header .catalog a:hover .hover {
+  opacity: 1;
+}
+.header .catalog a:hover .simple {
+  opacity: 0;
+  display: none;
+}
 .header .cart .image {
   width: 54px;
   height: 54px;
@@ -67,7 +91,7 @@ body {
   -moz-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-  line-height: 64px;
+  line-height: 67px;
   float: left;
   display: inline-block;
   margin-right: 18px;
@@ -185,10 +209,11 @@ body {
   display: block;
   padding: 16px 60px 16px 20px;
   position: relative;
-  border-left: 2px solid transparent;
+  border-left: 3px solid transparent;
 }
+#content .sidebar ul li a.active,
 #content .sidebar ul li a:hover {
-  border-left: 2px solid #eb2329;
+  border-left: 3px solid #eb2329;
 }
 #content .sidebar ul li a span {
   padding: 3px 8px;
@@ -240,6 +265,7 @@ body {
   background: #ffffff;
   min-height: 300px;
   border-radius: 4px;
+  cursor: pointer;
 }
 .about-section .item .icon {
   margin-bottom: 40px;
@@ -253,6 +279,15 @@ body {
 .about-section .item .desc {
   font-size: 15px;
   color: #221e1f;
+}
+.about-section .item:hover {
+  background: #4a524e;
+}
+.about-section .item:hover .h3 {
+  color: #ffffff;
+}
+.about-section .item:hover .desc {
+  color: #ffffff;
 }
 .video-block {
   background: #4a524e;
@@ -541,9 +576,10 @@ body {
   float: left;
   display: inline-block;
   border-radius: 4px;
-  border: solid 1px #e8e8e8;
-  padding: 60px 80px;
+  padding: 40px 80px;
   width: 600px;
+  height: 387px;
+  background: url(../img/svg/combinedShape.svg);
 }
 .quest-section .quest .desc {
   margin-bottom: 30px;
@@ -570,8 +606,6 @@ body {
 .pub-section {
   overflow: hidden;
   padding: 40px 20px;
-  border-radius: 4px;
-  background-color: #e8e8e8;
 }
 .pub-section .h1 {
   margin: 20px 0 60px;
@@ -596,9 +630,15 @@ body {
   object-fit: contain;
   background: url("/tpl/img/svg/az.svg");
 }
+.pub-section .pub-wrap {
+  padding: 50px 0;
+  border-radius: 4px;
+  background-color: #e8e8e8;
+}
 .pub-section .item {
-  width: 264px;
+  width: 334px;
   font-size: 15px;
+  padding-left: 60px;
 }
 .pub-section .item .head {
   font-weight: 900;
@@ -615,6 +655,19 @@ body {
   font-weight: 900;
   text-decoration: none;
   color: #221e1f;
+}
+.pub-section .item .more .hover {
+  opacity: 0;
+}
+.pub-section .item .more:hover {
+  color: #c0050b;
+}
+.pub-section .item .more:hover .hover {
+  opacity: 1;
+}
+.pub-section .item .more:hover .simple {
+  opacity: 0;
+  display: none;
 }
 .pub-section .items {
   overflow: hidden;
@@ -684,6 +737,84 @@ footer .contact .item p {
 footer .contact .item small {
   font-size: 15px;
   color: #bbbbbb;
+}
+footer .social p {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0 0 30px;
+}
+footer .social .block {
+  clear: both;
+  margin-bottom: 12px;
+  margin-right: 20px;
+  display: inline-block;
+}
+footer .social .block:nth-child(3n+3) {
+  margin-right: 0;
+}
+footer .social .block .hover {
+  display: none;
+}
+footer .social .block:hover {
+  color: #c0050b;
+}
+footer .social .block:hover .hover {
+  opacity: 1;
+  display: block;
+}
+footer .social .block:hover .simple {
+  opacity: 0;
+  display: none;
+}
+footer .social .block a {
+  overflow: hidden;
+  display: block;
+  width: 54px;
+  height: 54px;
+}
+footer .social .block a img {
+  width: 54px;
+  height: 54px;
+}
+footer .call {
+  overflow: hidden;
+}
+footer .call .img {
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+}
+footer .call p {
+  margin: 0;
+  color: #ffffff;
+  width: 124px;
+  float: left;
+}
+footer .show-all {
+  text-align: left;
+  margin-top: 30px;
+}
+footer .show-all a {
+  display: block;
+  background: #ffffff;
+  width: 217px;
+  height: 54px;
+  border-radius: 4px;
+  border: solid 2px #eb2329;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #eb2329;
+  text-transform: uppercase;
+  line-height: 54px;
+  text-align: center;
+  margin: 0;
+}
+footer .show-all a:hover {
+  background-color: #c0050b;
+  border-color: #c0050b;
+  color: #ffffff;
 }
 #content {
   overflow: hidden;
