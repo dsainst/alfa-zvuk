@@ -33,25 +33,6 @@ body {
   font-size: 15px;
   color: #221e1f;
 }
-.header .btn-call a {
-  display: block;
-  width: 217px;
-  height: 54px;
-  border-radius: 4px;
-  border: solid 2px #eb2329;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  color: #eb2329;
-  text-transform: uppercase;
-  line-height: 54px;
-  text-align: center;
-}
-.header .btn-call a:hover {
-  background-color: #c0050b;
-  border-color: #c0050b;
-  color: #ffffff;
-}
 .header .phone {
   margin-bottom: 14px;
   margin-left: 30px;
@@ -517,4 +498,176 @@ body {
 }
 .service-section .item:hover .img .simple {
   display: none;
+}
+.quest-section {
+  overflow: hidden;
+  padding: 40px 20px;
+}
+.quest-section .h1 {
+  margin: 20px 0 60px;
+  text-align: left;
+}
+.quest-section .h1 span {
+  font-size: 28px;
+  font-weight: 300;
+  color: #221e1f;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 30px;
+}
+.quest-section .h1 span:after {
+  content: '';
+  position: absolute;
+  left: -44px;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background: url("/tpl/img/svg/az.svg");
+}
+.quest-section .image {
+  float: left;
+  display: inline-block;
+  width: 280px;
+  height: 334px;
+  object-fit: contain;
+  margin: 40px 40px 0 60px;
+}
+.quest-section .image img {
+  width: 100%;
+}
+.quest-section .quest {
+  float: left;
+  display: inline-block;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  padding: 60px 80px;
+  width: 600px;
+}
+.quest-section .quest .desc {
+  margin-bottom: 30px;
+}
+.btn-call a {
+  display: block;
+  width: 217px;
+  height: 54px;
+  border-radius: 4px;
+  border: solid 2px #eb2329;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #eb2329;
+  text-transform: uppercase;
+  line-height: 54px;
+  text-align: center;
+}
+.btn-call a:hover {
+  background-color: #c0050b;
+  border-color: #c0050b;
+  color: #ffffff;
+}
+.pub-section {
+  overflow: hidden;
+  padding: 40px 20px;
+  border-radius: 4px;
+  background-color: #e8e8e8;
+}
+.pub-section .h1 {
+  margin: 20px 0 60px;
+  text-align: center;
+}
+.pub-section .h1 span {
+  font-size: 28px;
+  font-weight: 300;
+  color: #221e1f;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 30px;
+}
+.pub-section .h1 span:after {
+  content: '';
+  position: absolute;
+  left: -44px;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background: url("/tpl/img/svg/az.svg");
+}
+.pub-section .item {
+  width: 264px;
+  font-size: 15px;
+}
+.pub-section .item .head {
+  font-weight: 900;
+  color: #221e1f;
+  margin-bottom: 30px;
+  border-top: 2px solid #eb2329;
+  padding-top: 20px;
+}
+.pub-section .item .desc {
+  color: #221e1f;
+  margin-bottom: 10px;
+}
+.pub-section .item .more {
+  font-weight: 900;
+  text-decoration: none;
+  color: #221e1f;
+}
+.pub-section .items {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.pub-section .show-all {
+  text-align: center;
+  background: #ffffff;
+  position: relative;
+  width: 217px;
+  height: 54px;
+  border-radius: 4px;
+  border: solid 2px #eb2329;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.pub-section .show-all a {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #eb2329;
+  text-transform: uppercase;
+  line-height: 54px;
+  text-align: center;
+  margin: 0 auto;
+}
+.pub-section .show-all a:hover {
+  background-color: #c0050b;
+  border-color: #c0050b;
+  color: #ffffff;
+}
+footer {
+  padding: 60px 0;
+  background-color: #4a524e;
+  overflow: hidden;
+}
+footer .logo {
+  font-size: 15px;
+  color: #ffffff;
+}
+footer .logo .logo-wrap {
+  height: 65px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+footer .logo img {
+  width: 264px;
+  height: 94px;
+  object-fit: contain;
+}
+footer .logo p {
+  font-size: 15px;
+  font-weight: 900;
+  color: #ffffff;
 }
