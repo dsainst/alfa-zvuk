@@ -662,7 +662,7 @@ footer .logo .logo-wrap {
   margin-bottom: 10px;
 }
 footer .logo img {
-  width: 264px;
+  width: 256px;
   height: 94px;
   object-fit: contain;
 }
@@ -670,6 +670,20 @@ footer .logo p {
   font-size: 15px;
   font-weight: 900;
   color: #ffffff;
+}
+footer .contact .item {
+  margin-bottom: 14px;
+}
+footer .contact .item p {
+  line-height: 1em;
+  margin: 0 0 5px 0;
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 200;
+}
+footer .contact .item small {
+  font-size: 15px;
+  color: #bbbbbb;
 }
 #content {
   overflow: hidden;
