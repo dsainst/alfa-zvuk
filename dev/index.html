@@ -39,13 +39,17 @@
                 <a href="#">Обратный звонок</a>
             </div>
             <div class="search">
-                <input type="text" class="search" placeholder="Поиск">
+                <input type="text" value="" class="search" placeholder="Поиск">
+                <a href="#" class="magnifying-glass">
+                    <img src="tpl/img/svg/magnifyingGlass.svg" alt="search" />
+                </a>
             </div>
         </div>
         <div class="grid_3">
             <div class="cart">
                 <div class="image">
                     <img src="tpl/img/svg/shoppingCart.svg" alt="cart logo">
+                    <span class="count">2</span>
                 </div>
                 <div class="info">
                     <div class="price">
@@ -356,7 +360,7 @@
     <div class="container_12">
         <div class="grid_3">
             <div class="item">
-                <div class="number">2007</div>
+                <div class="animateNum" data-num="2007" data-separator=" ">0</div>
                 <div class="desc">
                     <span>Наша компания на рынке с 2007 года</span>
                 </div>
@@ -364,7 +368,7 @@
         </div>
         <div class="grid_3">
             <div class="item">
-                <div class="number">23000</div>
+                <div class="animateNum" data-num="23000" data-separator=" ">0</div>
                 <div class="desc">
                     <span>23 000 компаний стали нашими клиентами</span>
                 </div>
@@ -372,7 +376,7 @@
         </div>
         <div class="grid_3">
             <div class="item">
-                <div class="number">6000</div>
+                <div class="animateNum" data-num="6000" data-separator=" ">0</div>
                 <div class="desc">
                     <span>Мы озвучили свыше 6&nbsp;000 объектов</span>
                 </div>
@@ -380,7 +384,7 @@
         </div>
         <div class="grid_3">
             <div class="item">
-                <div class="number">150</div>
+                <div class="animateNum" data-num="150" data-separator=" ">0</div>
                 <div class="desc">
                     <span>На нашем счету 150 городов России</span>
                 </div>
@@ -746,6 +750,7 @@
 
 <!-- javascript -->
 <script src="tpl/js/jquery.min.js"></script>
+<script src="tpl/js/jquery.animateNumber.js"></script>
 <script src="tpl/js/owl.carousel.js"></script>
 <script src="tpl/js/main.js"></script>
 </body>
