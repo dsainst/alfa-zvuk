@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="59" viewBox="0 0 59 59">
+    <defs>
+        <circle id="a" cx="27.5" cy="27.5" r="27.5"/>
+        <mask id="b" width="59" height="59" x="-2" y="-2">
+            <path fill="#fff" d="M-2-2h59v59H-2z"/>
+            <use xlink:href="#a"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(2 2)">
+            <use fill="#FD8917" xlink:href="#a"/>
+            <use stroke="#FFF" stroke-width="4" mask="url(#b)" xlink:href="#a"/>
+        </g>
+        <text fill="#FFF" font-family="Roboto-Black, Roboto" font-size="16" font-weight="700" transform="translate(2 2)">
+            <tspan x="8" y="33">sale</tspan>
+        </text>
+    </g>
+</svg>
