@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
     var owl = $('.owl-carousel');
+    var owl2 = $('.shop-items');
     owl.owlCarousel({
         margin: 10,
         nav: true,
@@ -7,6 +8,14 @@ jQuery(document).ready(function($) {
         items: 7,
         dots: true,
         navText: ['<span class="left"></span>', '<span class="right"></span>']
+    });
+    owl2.owlCarousel({
+        margin: 10,
+        nav: false,
+        loop: true,
+        items: 4,
+        dots: true,
+        autoplay: true
     });
 
     var show = true;
