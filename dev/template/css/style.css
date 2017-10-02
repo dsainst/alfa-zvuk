@@ -17,10 +17,57 @@ body {
   height: 30px;
   background: #e8e8e8;
   margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+}
+.top .wrap-top {
+  margin: 0 auto;
+  width: 400px;
+}
+.top .wrap-top .city {
+  display: inline-block;
+  float: none;
+  font-size: 15px;
+  color: #bbbbbb;
+}
+.top .wrap-top .city span {
+  display: inline-block;
+  float: left;
+  line-height: 30px;
+  margin-right: 5px;
+}
+.top .wrap-top .city ul {
+  display: inline-block;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+.top .wrap-top .city ul li {
+  display: inline-block;
+  float: left;
+}
+.top .wrap-top .city ul li a {
+  color: #221e1f;
+  padding: 6px 14px;
+  display: block;
+}
+.top .wrap-top .city ul li.active a,
+.top .wrap-top .city ul li:hover a {
+  background: #eb2329;
+  color: #fff;
+}
+.top .wrap-top .email-top {
+  display: inline-block;
+  float: right;
+  font-weight: 900;
+  color: #221e1f;
+  line-height: 30px;
 }
 .header {
   background: none;
-  margin: 20px auto;
+  margin: 50px auto 20px;
   max-height: 200px;
   width: 1200px;
   display: table;
@@ -243,6 +290,13 @@ body {
   background-color: #ffffff;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.11);
   border: solid 0.5px #e8e8e8;
+}
+#top-menu.fixed-menu {
+  position: fixed;
+  top: 30px !important;
+  z-index: 99999;
+  width: 100%;
+  background: #fff;
 }
 #top-menu ul {
   display: inline-block;

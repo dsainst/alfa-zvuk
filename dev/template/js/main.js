@@ -20,12 +20,13 @@ jQuery(document).ready(function($) {
 
     var show = true;
     /* ----------- FIXED TOP MENU BEGIN -------------- */
-    var h_hght = 174, // ������ �����
+    var h_hght = 150, // ������ �����
         h_mrg = 48;    // ������ ����� ����� ��� �� �����
 
     $(window).scroll(function() {
-        /*var top = $(this).scrollTop();
-        var elem = $('.top-menu');
+        var top = $(this).scrollTop();
+        var elem = $('#top-menu');
+
         //elem2 = $('.top-line');
         //if (top>0) elem2.addClass('fixed-menu'); else elem2.removeClass('fixed-menu');
         if (top+h_mrg < h_hght) {
@@ -34,7 +35,7 @@ jQuery(document).ready(function($) {
         } else {
             elem.css('top', h_mrg);
             elem.addClass('fixed-menu');
-        }*/
+        }
         /* ----------- FIXED TOP MENU END -------------- */
         if (!show) return false;
         $('.animateNum').each(function() {
