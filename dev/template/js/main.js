@@ -10,8 +10,7 @@ jQuery(document).ready(function($) {
         navText: ['<span class="left"></span>', '<span class="right"></span>']
     });
     owl2.owlCarousel({
-        margin: 10,
-        nav: false,
+        margin: 30,
         loop: true,
         items: 4,
         dots: true,
@@ -20,7 +19,7 @@ jQuery(document).ready(function($) {
 
     var show = true;
     /* ----------- FIXED TOP MENU BEGIN -------------- */
-    var h_hght = 150, // ������ �����
+    var h_hght = 210, // ������ �����
         h_mrg = 48;    // ������ ����� ����� ��� �� �����
 
     $(window).scroll(function() {

@@ -13,6 +13,30 @@ body {
   font-family: 'Roboto', sans-serif;
   min-width: 1200px;
 }
+.show-all {
+  text-align: center;
+  margin: 40px 0;
+}
+.show-all a {
+  display: block;
+  width: 217px;
+  height: 54px;
+  border-radius: 4px;
+  border: solid 2px #eb2329;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #eb2329;
+  text-transform: uppercase;
+  line-height: 54px;
+  text-align: center;
+  margin: 0 auto;
+}
+.show-all a:hover {
+  background-color: #c0050b;
+  border-color: #c0050b;
+  color: #ffffff;
+}
 .top {
   height: 30px;
   background: #e8e8e8;
@@ -687,28 +711,7 @@ body {
   background: #eb2329;
 }
 .trust-section .carousel .show-all {
-  text-align: center;
   margin-top: 120px;
-}
-.trust-section .carousel .show-all a {
-  display: block;
-  width: 217px;
-  height: 54px;
-  border-radius: 4px;
-  border: solid 2px #eb2329;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  color: #eb2329;
-  text-transform: uppercase;
-  line-height: 54px;
-  text-align: center;
-  margin: 0 auto;
-}
-.trust-section .carousel .show-all a:hover {
-  background-color: #c0050b;
-  border-color: #c0050b;
-  color: #ffffff;
 }
 .service-section {
   overflow: hidden;
@@ -915,13 +918,10 @@ body {
   margin-bottom: 50px;
 }
 .pub-section .show-all {
-  text-align: center;
   background: #ffffff;
   position: relative;
   width: 217px;
   height: 54px;
-  border-radius: 4px;
-  border: solid 2px #eb2329;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -1110,10 +1110,16 @@ footer .show-all a:hover {
   /* в обычном состоянии её нет) */
 }
 .mb40 {
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
+}
+.mb30 {
+  margin-bottom: 30px !important;
+}
+.mb20 {
+  margin-bottom: 20px !important;
 }
 .mb60 {
-  margin-bottom: 60px;
+  margin-bottom: 60px !important;
 }
 #Breadcrumbs ul {
   margin: 0;
