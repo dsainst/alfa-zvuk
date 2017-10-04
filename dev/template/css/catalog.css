@@ -1485,3 +1485,59 @@ body #shk_prodHelper #shk_buttons #shk_cancelButton {
   padding: 5px 7px;
   font-size: 14px;
 }
+#content .service-section {
+  padding: 40px;
+  border-radius: 4px;
+  background-color: #98161b;
+  margin-bottom: 30px;
+}
+#content .service-section .h1 {
+  margin: 30px !important;
+  text-align: left;
+}
+#content .service-section .h1 span {
+  color: #ffffff;
+}
+#content .service-section .container2 {
+  width: 100%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#content .service-section .container2 .grid_4 {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 30px;
+}
+#content .quest-section {
+  padding: 30px 0 30px 20px;
+  margin-bottom: 30px;
+}
+#content .quest-section .image {
+  margin: 40px 30px 40px 0;
+}
+#content .quest-section .quest {
+  padding: 30px 60px;
+  width: 520px;
+  height: 400px;
+  background: none;
+  float: right;
+  border: 1px solid #ddd;
+}
+#content .quest-section .quest .h1 {
+  margin: 20px 0 30px;
+}
+#content .quest-section .quest .h1 span {
+  padding-left: 15px;
+}
+#content .quest-section .quest .h1 span:after {
+  left: -30px;
+}
+#content .quest-section .quest .btn-call a {
+  color: #ffffff;
+  background-color: #eb2329;
+}
