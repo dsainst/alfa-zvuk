@@ -1150,3 +1150,55 @@ h1 {
 .m20 {
   margin: 20px 0;
 }
+ul.pagination {
+  padding: 0;
+  margin: 0;
+}
+ul.pagination li {
+  margin: 0 10px;
+  display: inline-block;
+  float: left;
+  list-style: none;
+}
+ul.pagination li a {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  color: #221e1f;
+  display: block;
+}
+ul.pagination li span {
+  width: 26px;
+  height: 26px;
+  display: block;
+  line-height: 26px;
+}
+ul.pagination li.active a {
+  background-color: #eb2329;
+  color: #fff;
+  border-radius: 50%;
+}
+.relative {
+  position: relative;
+  height: 26px;
+  margin: 20px 0;
+}
+.relative .parent {
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.relative .parent > .inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.relative .parent ul.pagination {
+  display: inline-block;
+}
