@@ -241,6 +241,7 @@ body {
         background-color: #e8e8e8;
         text-align: center;
         overflow: hidden;
+        margin: 20px 0 0 0;
         .left {
           font-size: 15px;
           font-weight: 900;
@@ -1140,9 +1141,8 @@ footer {
 
 }
 
-
 .modal_div {
-  width: 300px;
+  width: 320px;
   border-radius: 5px;
   border: 3px #000 solid;
   background: #fff;
@@ -1153,10 +1153,12 @@ footer {
   margin-left: -150px; /* тут вся магия центровки css, отступаем влево и вверх минус половину ширины и высоты соответственно =) */
   display: none; /* в обычном состоянии окна не должно быть */
   opacity: 0; /* полностью прозрачно для анимирования */
-  z-index: 999; /* окно должно быть наиболее большем слое */
-  padding: 20px 10px;
+  z-index: 999999; /* окно должно быть наиболее большем слое */
+  padding: 30px;
 }
-/* Кнопка закрыть для тех кто в танке) */
+#jGrowl {
+  z-index: 9999999;
+}
 .modal_div .modal_close {
   width: 21px;
   height: 21px;
@@ -1165,10 +1167,11 @@ footer {
   right: 10px;
   cursor: pointer;
   display: block;
+  text-align: center;
 }
 /* Подложка */
 #overlay {
-  z-index: 998; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
+  z-index: 999998; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
   position: fixed; /* всегда перекрывает весь сайт */
   background-color: #000; /* черная */
   opacity: 0.6; /* но немного прозрачна */

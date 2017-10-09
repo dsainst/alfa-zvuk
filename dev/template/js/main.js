@@ -68,6 +68,7 @@ jQuery(document).ready(function($) {
         var div = $(this).attr('href');
         overlay.fadeIn(400,
             function() {
+            $('body').css('overflow', 'hidden');
                 $(div)
                     .css('display', 'block')
                     .animate({
@@ -83,6 +84,7 @@ jQuery(document).ready(function($) {
             }, 200,
 
             function() {
+                $('body').css('overflow', 'auto');
                 $(this).css('display', 'none');
                 overlay.fadeOut(400);
             });

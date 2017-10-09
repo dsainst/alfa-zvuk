@@ -232,6 +232,7 @@ body {
   background-color: #e8e8e8;
   text-align: center;
   overflow: hidden;
+  margin: 20px 0 0 0;
 }
 .header .cart .cart-wrap .total-sum .left {
   font-size: 15px;
@@ -1065,7 +1066,7 @@ footer .show-all a:hover {
   color: #ffffff;
 }
 .modal_div {
-  width: 300px;
+  width: 320px;
   border-radius: 5px;
   border: 3px #000 solid;
   background: #fff;
@@ -1082,11 +1083,13 @@ footer .show-all a:hover {
   /* в обычном состоянии окна не должно быть */
   opacity: 0;
   /* полностью прозрачно для анимирования */
-  z-index: 999;
+  z-index: 999999;
   /* окно должно быть наиболее большем слое */
-  padding: 20px 10px;
+  padding: 30px;
 }
-/* Кнопка закрыть для тех кто в танке) */
+#jGrowl {
+  z-index: 9999999;
+}
 .modal_div .modal_close {
   width: 21px;
   height: 21px;
@@ -1095,10 +1098,11 @@ footer .show-all a:hover {
   right: 10px;
   cursor: pointer;
   display: block;
+  text-align: center;
 }
 /* Подложка */
 #overlay {
-  z-index: 998;
+  z-index: 999998;
   /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
   position: fixed;
   /* всегда перекрывает весь сайт */
@@ -1459,6 +1463,7 @@ ul.pagination li.active a {
   font-size: 12px;
   color: #221e1f;
   margin-bottom: 10px;
+  max-width: 100%;
 }
 #content .category-items .item-block .desc-wrap .stars,
 #content .shop-items .item-block .desc-wrap .stars {
