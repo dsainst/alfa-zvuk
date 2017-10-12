@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
     var owl = $('.owl-carousel');
     var owl2 = $('.shop-items');
+    var cartProduct = $('.carousel-min');
     owl.owlCarousel({
         margin: 10,
         nav: true,
@@ -15,6 +16,15 @@ jQuery(document).ready(function($) {
         items: 4,
         dots: true,
         autoplay: true
+    });
+    cartProduct.bxSlider({
+        minSlides: 3,
+        maxSlides: 3,
+        slideWidth: 67,
+        pager: false,
+        slideMargin: 15,
+        nextText: '<span class="left"><img src="tpl/img/svg/arrowNext.svg" class="simple"><img src="tpl/img/svg/arrowNextHover.svg" class="hover"></span>',
+        prevText: '<span class="right"><img src="tpl/img/svg/arrowNext.svg" class="simple"><img src="tpl/img/svg/arrowNextHover.svg" class="hover"></span>',
     });
 
     var show = true;

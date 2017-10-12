@@ -372,8 +372,29 @@ body {
     }
   }
 }
-
 #content {
+  h1, h2, h3, h4 {
+    a {
+      color: #2f2f2f;
+    }
+  }
+  .post {
+    border-top: 1px solid #e8e8e8;
+    padding-top: 20px;
+    margin-top: 40px;
+    &:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    .meta {
+      margin: 10px 0;
+      color: #bbbbbb;
+    }
+  }
+  p {
+    line-height: 1.4em;
+  }
   .h1 {
     margin: 40px 0 20px;
     img {

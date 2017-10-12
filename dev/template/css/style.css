@@ -356,6 +356,29 @@ body {
 #content {
   /* end of content */
 }
+#content h1 a,
+#content h2 a,
+#content h3 a,
+#content h4 a {
+  color: #2f2f2f;
+}
+#content .post {
+  border-top: 1px solid #e8e8e8;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+#content .post:first-child {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+#content .post .meta {
+  margin: 10px 0;
+  color: #bbbbbb;
+}
+#content p {
+  line-height: 1.4em;
+}
 #content .h1 {
   margin: 40px 0 20px;
 }
