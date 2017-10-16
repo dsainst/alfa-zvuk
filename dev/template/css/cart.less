@@ -115,14 +115,15 @@
         position: relative;
         height: 67px;
         .bx-controls {
-          span.right {
+          span.left {
             position: absolute;
             top: 50%;
             margin-top: -5px;
             display: block;
             right: -15px;
           }
-          span.left {
+
+          span.right {
             position: absolute;
             top: 50%;
             margin-top: -5px;
@@ -151,7 +152,6 @@
           }
         }
       }
-
       ul {
         padding: 0;
         margin: 0;
@@ -163,6 +163,9 @@
           border: solid 1px #e8e8e8;
           padding: 5px;
           height: 67px;
+          &.active {
+            border: solid 1px #c0050b;
+          }
         }
       }
     }
@@ -314,40 +317,40 @@
       }
     }
   }
-  #tabs {
-    margin: 40px 0;
-    &>ul {
+}
+#tabs {
+  margin: 40px 0;
+  &>ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-radius: 4px 4px 0 0;
+    background-color: #ffffff;
+    border: solid 1px #e8e8e8;
+    border-bottom: 0;
+    &>li {
+      list-style: none;
       padding: 0;
-      margin: 0;
-      display: flex;
-      border-radius: 4px 4px 0 0;
-      background-color: #ffffff;
-      border: solid 1px #e8e8e8;
-      border-bottom: 0;
-      &>li {
-        list-style: none;
-        padding: 0;
-        margin: 0 auto;
-        border-bottom: 3px solid transparent;
-        &>a {
-          font-size: 15px;
-          color: #221e1f;
-          padding: 21px;
-          display: block;
-          text-transform: uppercase;
-        }
-        &.ui-tabs-active {
-          border-bottom: 3px solid #eb2329;
-        }
+      margin: 0 auto;
+      border-bottom: 3px solid transparent;
+      &>a {
+        font-size: 15px;
+        color: #221e1f;
+        padding: 21px;
+        display: block;
+        text-transform: uppercase;
+      }
+      &.ui-tabs-active {
+        border-bottom: 3px solid #eb2329;
       }
     }
-    .wrap-tabs {
-      border-radius: 0 0 4px 4px;
-      background-color: #ffffff;
-      border: solid 1px #e8e8e8;
-      padding: 45px;
-      line-height: 1.4em;
-    }
+  }
+  .wrap-tabs {
+    border-radius: 0 0 4px 4px;
+    background-color: #ffffff;
+    border: solid 1px #e8e8e8;
+    padding: 45px;
+    line-height: 1.4em;
   }
 }
 

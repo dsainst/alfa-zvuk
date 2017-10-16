@@ -208,6 +208,7 @@ body {
 }
 .header .cart .cart-wrap .cart-line .name {
   display: inline-block;
+  max-width: 255px;
 }
 .header .cart .cart-wrap .cart-line .name .badge {
   font-size: 12px;
@@ -398,110 +399,6 @@ body {
 }
 #content .title .h1 {
   margin-top: 0;
-}
-#content .sidebar {
-  border-radius: 4px;
-  border: solid 1px #e8e8e8;
-  border-bottom: 0;
-  /* end of sidebar */
-}
-#content .sidebar .head {
-  border-radius: 4px 4px 0 0;
-  background-color: #e8e8e8;
-  padding: 16px 21px;
-  height: 54px;
-  overflow: hidden;
-}
-#content .sidebar .head img {
-  width: 26px;
-  height: 21px;
-  object-fit: contain;
-  float: left;
-  margin-right: 10px;
-}
-#content .sidebar .head .h3 {
-  font-size: 15px;
-  font-weight: 500;
-  color: #221e1f;
-  text-transform: uppercase;
-  line-height: 22px;
-}
-#content .sidebar > ul {
-  padding: 0;
-  margin: 0;
-}
-#content .sidebar > ul > li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#content .sidebar > ul > li ul.sub-menu {
-  padding: 0;
-  margin: 0;
-  background-color: #f4f4f4;
-  display: none;
-}
-#content .sidebar > ul > li ul.sub-menu li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#content .sidebar > ul > li ul.sub-menu li > a {
-  font-size: 15px;
-  color: #221e1f;
-  -webkit-text-stroke: 0.5px #979797;
-  text-decoration: none;
-  display: block;
-  padding: 16px 60px 16px 50px;
-  position: relative;
-  border-bottom: solid 1px #e8e8e8;
-  border-left: 3px solid transparent;
-}
-#content .sidebar > ul > li ul.sub-menu li > a:hover {
-  border-left: 3px solid #eb2329;
-}
-#content .sidebar > ul > li ul.sub-menu li.active > .sub-menu {
-  display: block;
-  background-color: #e8e8e8;
-}
-#content .sidebar > ul > li ul.sub-menu li.active > a {
-  border-left: 3px solid #eb2329;
-}
-#content .sidebar > ul > li > a {
-  font-size: 15px;
-  color: #221e1f;
-  -webkit-text-stroke: 0.5px #979797;
-  text-decoration: none;
-  display: block;
-  padding: 16px 60px 16px 20px;
-  position: relative;
-  border-bottom: solid 1px #e8e8e8;
-  border-left: 3px solid transparent;
-}
-#content .sidebar > ul > li > a:hover {
-  border-left: 3px solid #eb2329;
-}
-#content .sidebar > ul > li > a span {
-  padding: 3px 8px;
-  font-size: 12px;
-  font-weight: 900;
-  text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  background: #000000;
-  display: block;
-  float: right;
-  color: #ffffff;
-  position: absolute;
-  top: 30%;
-  right: 10px;
-}
-#content .sidebar > ul > li.active > .sub-menu {
-  display: block;
-}
-#content .sidebar > ul > li.active a {
-  border-left: 3px solid #eb2329;
 }
 #content .banner {
   margin: 40px 0;

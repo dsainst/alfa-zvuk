@@ -216,6 +216,7 @@ body {
         }
         .name {
           display: inline-block;
+          max-width: 255px;
           .badge {
             font-size: 12px;
             color: #bbbbbb;
@@ -416,115 +417,6 @@ body {
     .h1 {
       margin-top: 0;
     }
-  }
-  .sidebar {
-    border-radius: 4px;
-    border: solid 1px #e8e8e8;
-    border-bottom: 0;
-    .head {
-      border-radius: 4px 4px 0 0;
-      background-color: #e8e8e8;
-      padding: 16px 21px;
-      height: 54px;
-      overflow: hidden;
-      img {
-        width: 26px;
-        height: 21px;
-        object-fit: contain;
-        float: left;
-        margin-right: 10px;
-      }
-      .h3 {
-        font-size: 15px;
-        font-weight: 500;
-        color: @black2;
-        text-transform: uppercase;
-        line-height: 22px;
-      }
-    }
-    &>ul {
-      padding: 0;
-      margin: 0;
-      &>li {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        ul.sub-menu {
-          padding: 0;
-          margin: 0;
-          background-color: #f4f4f4;
-          display: none;
-          li {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            & > a {
-              font-size: 15px;
-              color: @black2;
-              -webkit-text-stroke: 0.5px #979797;
-              text-decoration: none;
-              display: block;
-              padding: 16px 60px 16px 50px;
-              position: relative;
-              border-bottom: solid 1px #e8e8e8;
-              border-left: 3px solid transparent;
-              &:hover {
-                border-left: 3px solid @red;
-              }
-            }
-            &.active {
-              & > .sub-menu {
-                display: block;
-                background-color: #e8e8e8;
-              }
-              & > a {
-                border-left: 3px solid @red;
-              }
-            }
-          }
-        }
-        & > a {
-          font-size: 15px;
-          color: @black2;
-          -webkit-text-stroke: 0.5px #979797;
-          text-decoration: none;
-          display: block;
-          padding: 16px 60px 16px 20px;
-          position: relative;
-          border-bottom: solid 1px #e8e8e8;
-          border-left: 3px solid transparent;
-          &:hover {
-            border-left: 3px solid @red;
-          }
-          span {
-            padding: 3px 8px;
-            font-size: 12px;
-            font-weight: 900;
-            text-align: center;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            background: @black;
-            display: block;
-            float: right;
-            color: @white;
-            position: absolute;
-            top: 30%;
-            right: 10px;
-          }
-        }
-
-        &.active {
-          & > .sub-menu {
-            display: block;
-          }
-          a {
-            border-left: 3px solid @red;
-          }
-        }
-      }
-    }
-    /* end of sidebar */
   }
   .banner {
     margin: 40px 0;

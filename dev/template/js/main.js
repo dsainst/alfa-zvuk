@@ -17,15 +17,17 @@ jQuery(document).ready(function($) {
         dots: true,
         autoplay: true
     });
-    cartProduct.bxSlider({
-        minSlides: 3,
-        maxSlides: 3,
-        slideWidth: 67,
-        pager: false,
-        slideMargin: 15,
-        nextText: '<span class="left"><img src="tpl/img/svg/arrowNext.svg" class="simple"><img src="tpl/img/svg/arrowNextHover.svg" class="hover"></span>',
-        prevText: '<span class="right"><img src="tpl/img/svg/arrowNext.svg" class="simple"><img src="tpl/img/svg/arrowNextHover.svg" class="hover"></span>',
-    });
+    if (cartProduct.length) {
+        cartProduct.bxSlider({
+            minSlides: 3,
+            maxSlides: 3,
+            slideWidth: 67,
+            pager: false,
+            slideMargin: 15,
+            nextText: '<span class="left"><img src="tpl/img/svg/arrowNext.svg" class="simple"><img src="tpl/img/svg/arrowNextHover.svg" class="hover"></span>',
+            prevText: '<span class="right"><img src="tpl/img/svg/arrowNext.svg" class="simple"><img src="tpl/img/svg/arrowNextHover.svg" class="hover"></span>',
+        });
+    }
 
     var show = true;
     /* ----------- FIXED TOP MENU BEGIN -------------- */
@@ -98,6 +100,14 @@ jQuery(document).ready(function($) {
                 $(this).css('display', 'none');
                 overlay.fadeOut(400);
             });
+    });
+
+    $('.product_img_small').click(function(er){
+        er.preventDefault();
+        $('.carousel-min li').removeClass('active');
+        $(this).parent('li').addClass('active');
+        $('.block-img > .fancybox').html('<img src="' + $(this).data('smallimg') + '">');
+        $('.block-img > .fancybox').attr('href', $(this).data('img'));
     });
 
 });
