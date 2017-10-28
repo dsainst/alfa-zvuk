@@ -47,12 +47,11 @@ body {
   width: 100%;
 }
 .top .wrap-top {
-  margin: 0 auto;
-  width: 400px;
+  text-align: center;
 }
 .top .wrap-top .city {
   display: inline-block;
-  float: none;
+  float: left;
   font-size: 15px;
   color: #bbbbbb;
 }
@@ -81,6 +80,10 @@ body {
 .top .wrap-top .city ul li:hover a {
   background: #eb2329;
   color: #fff;
+}
+.top .wrap-top .info-top {
+  display: inline-block;
+  line-height: 30px;
 }
 .top .wrap-top .email-top {
   display: inline-block;
@@ -363,6 +366,33 @@ body {
 #content h4 a {
   color: #2f2f2f;
 }
+#content .trust {
+  position: relative;
+}
+#content .trust .item {
+  margin: 0;
+  cursor: pointer;
+  width: 20%;
+  height: 150px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  float: left;
+  line-height: 110px;
+  opacity: 0.5;
+}
+#content .trust .item:hover {
+  opacity: 1;
+}
+#content .trust .item img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  vertical-align: middle;
+}
 #content .post {
   border-top: 1px solid #e8e8e8;
   padding-top: 20px;
@@ -552,6 +582,23 @@ body {
   overflow: hidden;
   margin-bottom: 60px;
 }
+.trust-section .carousel .owl-carousel .owl-item .item {
+  cursor: pointer;
+  width: 150px;
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  line-height: 110px;
+}
+.trust-section .carousel .owl-carousel .owl-item .item img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  max-height: 100%;
+}
 .trust-section .border {
   padding: 60px 20px 40px;
   margin: 0 30px;
@@ -607,12 +654,12 @@ body {
 .trust-section .carousel .owl-prev {
   position: absolute;
   left: 0;
-  top: 3px;
+  top: 50px;
 }
 .trust-section .carousel .owl-next {
   position: absolute;
   right: 0;
-  top: 3px;
+  top: 50px;
 }
 .trust-section .carousel .owl-dots {
   text-align: center;
@@ -1125,6 +1172,20 @@ ul.pagination li.active a {
 }
 .relative .parent ul.pagination {
   display: inline-block;
+}
+.itext-area {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  color: #221e1f;
+  min-height: 100px;
+  margin: 0;
+  resize: none;
 }
 #content {
   overflow: hidden;

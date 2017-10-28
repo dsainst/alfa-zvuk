@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <td>Имя</td><td>[[+namez]]</td>
+    </tr>
+    <tr>
+        <td>Телефон</td><td>[[+phonez]]</td>
+    </tr>
+    
+    <tr>
+        <td>Удобное Дата</td><td>[[+datez]]</td>
+    </tr>
+    
+    <tr>
+        <td>Удобное время для звонка</td><td>[[+timez]]</td>
+    </tr>
+    
+    <tr>
+        <td>Отправлено со страницы</td><td>[[~[[*id]]]]</td>
+    </tr>
+</table>

@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <td>Имя</td><td>[[+name]]</td>
+    </tr>
+    
+    <tr>
+        <td>Е-mail</td><td><a href="[[+email]]">[[+email]]</a></td>
+    </tr>
+    
+    <tr>
+        <td>Телефон</td><td>[[+phone]]</td>
+    </tr>
+    
+    <tr>
+        <td>Текст обращения</td><td>[[+commen]]</td>
+    </tr>
+    
+    <tr>
+        <td>Отправлено со страницы</td><td>[[~[[*id]]]]</td>
+    </tr>
+</table>

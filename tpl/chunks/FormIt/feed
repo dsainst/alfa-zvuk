@@ -1,0 +1,11 @@
+[[!AjaxForm?
+	&snippet=`FormIt`
+	&form=`tpl.ajax`
+	&hooks=`spam,email`
+	&emailSubject=`Сообщение с сайта [[++site_name]]`
+	&emailTo=`[[#1.tv.email]]`
+	&emailTpl=`EReport`
+	&validate=`name:required, email:email:required`
+	&validationErrorMessage=`<img src="tpl/images/close.png" alt=""><p>Заполните все обязательные поля!</p><span>Проверьте правильно ли заполнены поля</span>`
+	&successMessage=`<img src="tpl/images/gal.png" alt=""><p>Сообщение успешно отправлено</p><span>Ответ или звонок ожидайте в ближайшее время</span>`
+]]

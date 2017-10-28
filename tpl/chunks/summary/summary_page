@@ -1,0 +1,45 @@
+<div class="complex">
+    <div class="block-img">
+        <a class="fancybox" data-lightbox="pimage" href="[[*image]]">
+            <img src="[[*image:phpthumbon=`w=263&h=263`]]" alt="[[*pagetitle]]" />
+        </a>
+        <div class="clearfix"></div>
+        <div class="questions">
+            <div class="item">
+                <p class="grey">Задать вопрос по телефону:</p>
+                <p class="red">[[#1.tv.phone]]</p>
+            </div>
+            <div class="item">
+                <p class="grey">Задать вопрос по email:</p>
+                <p class="red">[[#1.tv.email]]</p>
+            </div>
+        </div>
+    </div>
+    <div class="right-block">
+        <div class="title">
+            <div class="img">
+                <img src="[[*icon]]" alt="">
+            </div>
+            <div class="h1">[[*pagetitle]]</div>
+        </div>
+        <div class="desc">
+            <h4>Описание</h4>
+            [[*introtext]]
+        </div>
+        <div class="btn-block">
+            <a href="#modal_form2" class="ticket btn-red open_modal">Оформить заявку</a>
+            <a href="[[~[[*id]]]]#callback-block" class="specialist btn-white">Заказать выезд специалиста</a>
+        </div>
+    </div>
+</div>
+<div class="description">
+    <div class="title">
+        [[*longtitle:isset=`
+        <div class="h1 mb40">
+            <img src="tpl/img/svg/az.svg" alt="">
+            <span>[[*longtitle]]</span>
+        </div>
+        `]]
+    </div>
+    [[*content]]
+</div>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+[[$head]]
+<body>
+    [[$header]]
+    <div id="content">
+    <div class="container_12">
+        <div class="grid_3">
+            <p></p>
+        </div>
+        <div class="grid_9">
+            <div class="h1">
+                <img src="tpl/img/svg/az.svg" alt="">
+                <span>[[#13.pagetitle]]</span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid_3">
+            [[$sidebar]]
+        </div>
+        <div class="grid_9">
+            <div class="filter">
+                [[$filters]]
+            </div>
+            <div class="catalog">
+                [[!pdoPage?
+                    &parents=`13` 
+                    &limit=`15` 
+                    &cache=`1`
+                    &tpl=`cat_tpl`
+                    &depth=`0`
+                    &sortby=`menuindex` 
+                    &sortdir=`ASC`
+                ]]
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid_3">
+            <p></p>
+        </div>
+        <div class="grid_9">
+            <div class="h1">
+                <img src="tpl/img/svg/az.svg" alt="">
+                <span>[[#46.pagetitle]]</span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid_3">
+            [[$sidebar-sum]]
+        </div>
+        <div class="grid_9">
+            [[$summary]]
+        </div>
+    </div>
+    <!-- end of content -->
+</div>
+<div class="about-section">
+    <div class="h1">
+        <span class="h3">[[#2.pagetitle]]</span>
+    </div>
+    <div class="container_12">
+        [[!pdoPage?
+            &parents=`2` 
+            &resources=`54,55,56,57` 
+            &cache=`1`
+            &tpl=`about_tpl`
+            &depth=`0`
+        ]]
+    </div>
+</div>
+
+<div class="video-block">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="head">
+                [[#58.pagetitle]]
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid_7">
+            <div class="about">
+                [[#58.content]]
+            </div>
+        </div>
+        <div class="grid_5">
+            <img src="tpl/img/video.jpg"
+                 srcset="tpl/img//video@2x.jpg 2x,
+                tpl/img//video@3x.jpg 3x"
+                 alt="">
+            <div class="clearfix"></div>
+            <img src="tpl/img/svg/alfazvukLogoMin.svg"
+                 class="alfazvuk-logo-min">
+        </div>
+    </div>
+</div>
+
+<div class="stat-section">
+    <div class="h1">
+        <span class="h3">Статистика</span>
+    </div>
+    <div class="container_12">
+        <div class="grid_3">
+            <div class="item">
+                <div class="animateNum" data-num="2007" data-separator=" ">0</div>
+                <div class="desc">
+                    <span>Наша компания на рынке с 2007 года</span>
+                </div>
+            </div>
+        </div>
+        <div class="grid_3">
+            <div class="item">
+                <div class="animateNum" data-num="23000" data-separator=" ">0</div>
+                <div class="desc">
+                    <span>23 000 компаний стали нашими клиентами</span>
+                </div>
+            </div>
+        </div>
+        <div class="grid_3">
+            <div class="item">
+                <div class="animateNum" data-num="6000" data-separator=" ">0</div>
+                <div class="desc">
+                    <span>Мы озвучили свыше 6&nbsp;000 объектов</span>
+                </div>
+            </div>
+        </div>
+        <div class="grid_3">
+            <div class="item">
+                <div class="animateNum" data-num="150" data-separator=" ">0</div>
+                <div class="desc">
+                    <span>На нашем счету 150 городов России</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="trust-section">
+    <div class="container_12">
+        <div class="border">
+            <div class="h1">
+                <span class="h3">[[#84.pagetitle]]</span>
+            </div>
+            [[$trust-gl]]
+        </div>
+    </div>
+</div>
+
+<div class="service-section">
+    <div class="h1">
+        <span class="h3">[[#47.pagetitle]]</span>
+    </div>
+    <div class="container_12">
+        [[!pdoPage?
+            &parents=`47` 
+            &limit=`6` 
+            &cache=`1`
+            &tpl=`service_tpl`
+            &depth=`0`
+        ]]
+    </div>
+</div>
+
+<div class="quest-section">
+    <div class="container_12">
+        <div class="image">
+            <img src="tpl/img/shutterstock3564322101.jpg"
+                 srcset="tpl/img/shutterstock3564322101@2x.jpg 2x,
+                         tpl/img/shutterstock3564322101@3x.jpg 3x"
+                 class="shutterstock-356432210-1">
+        </div>
+        <div class="quest">
+            <div class="h1">
+                <span class="h3">Остались вопросы?</span>
+            </div>
+            <div class="desc">
+                <p>Чтобы получить консультации по подбору оборудования для организации профессионального звука и/или
+                    оформить заявку, нужно сделать запрос на нашем сайте.</p>
+                <p>Вы можете воспользоваться формой обратной связи или позвонить менеджерам по контактным телефонам.</p>
+            </div>
+            <div class="btn-call">
+                <a href="#modal_form" class="open_modal">Обратный звонок</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pub-section">
+    <div class="container_12">
+        <div class="pub-wrap">
+            <div class="h1">
+                <span class="h3">[[#75.pagetitle]]</span>
+            </div>
+            <div class="items">
+                [[!pdoPage?
+                    &parents=`75` 
+                    &limit=`3` 
+                    &cache=`1`
+                    &tpl=`pub_tpl`
+                    &depth=`0`
+                ]]
+            </div>
+            <div class="show-all">
+                <a href="[[~75]]" class="btn-show">Посмотреть все</a>
+            </div>
+        </div>
+    </div>
+</div>
+    [[$footer]]
+</body>
+</html>
