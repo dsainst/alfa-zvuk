@@ -1,0 +1,100 @@
+
+            <div class="filter">
+                [[$filters-category]]
+            </div>
+            <div class="catalog">
+                [[!pdoPage?
+                    &elementClass=`modSnippet`
+                    &element=`getResources`
+                    &parents=`[[*id]]` 
+                    &depth=`0`
+                    &limit=`16` 
+                    &includeTVs=`1` 
+                    &includeTVList=`image`
+                    &tpl=`cat_tpl`
+                    &sortby=`menuindex` 
+                    &sortdir=`ASC`
+                	&sortbyTV=`sort`
+                	&sortbyTVType=`integer`
+                	&sortdirTV=`ASC`
+                ]]
+                
+                <ul class="pagination">[[!+page.nav]]</ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="recomended">
+                <div class="h1 mb30">
+                    <img src="tpl/img/svg/az.svg" alt="">
+                    <span>Рекомендуемые товары</span>
+                </div>
+                <div class="shop-items owl-theme">
+                    [[!pdoPage?
+                        &elementClass=`modSnippet`
+                        &element=`getResources`
+                        &parents=`[[*id]]` 
+                        &limit=`16`
+                        &includeTVs=`1` 
+                        &includeTVList=`image,price,color,sale,tags`
+                        &tvFilters=`recomended==1`
+                        &tpl=`shopItems`
+                        &sortby=`menuindex` 
+                        &sortdir=`ASC`
+                    	&sortbyTV=`sort`
+                    	&sortbyTVType=`integer`
+                    	&sortdirTV=`ASC`
+                    ]]
+                </div>
+                <!--div class="show-all">
+                    <a href="#" class="btn-show">Посмотреть все</a>
+                </div-->
+            </div>
+            <div class="clearfix"></div>
+            <div class="complects">
+                <div class="h1 mb30">
+                    <img src="tpl/img/svg/az.svg" alt="">
+                    <span>[[#71.pagetitle]]</span>
+                </div>
+                <div class="shop-items owl-theme">
+                    [[!pdoPage?
+                        &elementClass=`modSnippet`
+                        &element=`getResources`
+                        &parents=`71` 
+                        &limit=`16`
+                        &includeTVs=`1` 
+                        &includeTVList=`image,price,complect`
+                        &tpl=`shopItems`
+                        &sortby=`menuindex` 
+                        &sortdir=`ASC`
+                    	&sortbyTV=`sort`
+                    	&sortbyTVType=`integer`
+                    	&sortdirTV=`ASC`
+                    ]]
+                </div>
+                <div class="show-all">
+                    <a href="[[~71]]" class="btn-show">Посмотреть все</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="projects">
+                <div class="h1 mb30">
+                    <img src="tpl/img/svg/az.svg" alt="">
+                    <span>Реализованные проекты</span>
+                </div>
+                    [[!pdoPage?
+                        &elementClass=`modSnippet`
+                        &element=`getResources`
+                        &parents=`48` 
+                        &limit=`16`
+                        &includeTVs=`1` 
+                        &includeTVList=`image,price,color,sale,tags`
+                        &tpl=`realize-tpl`
+                        &sortby=`menuindex` 
+                        &sortdir=`ASC`
+                    	&sortbyTV=`sort`
+                    	&sortbyTVType=`integer`
+                    	&sortdirTV=`ASC`
+                    ]]
+                <div class="show-all">
+                    <a href="[[~48]]" class="btn-show">Посмотреть все</a>
+                </div>
+            </div>

@@ -1,0 +1,6 @@
+<div class="checkbox_props">[[+inner]]</div>
+<!--tpl_separator-->
+        <span>[[+inner]]</span>
+<!--tpl_separator-->
+<span class="ch_[[+id]]">[[+field]]</span>
+       

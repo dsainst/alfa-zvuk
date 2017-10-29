@@ -1,0 +1,15 @@
+            <div class="realize">
+                <div class="item-block" onclick="location='[[~[[+id]]]]'">
+                    <div class="image">
+                        <img src="[[phpthumbon?input=`[[+tv.image]]`&options=`w=196&h=130&zc=T`]]" alt="">
+                    </div>
+                    <div class="wrap">
+                        <div class="name">
+                            [[+pagetitle]]
+                        </div>
+                        <div class="city">
+                            [[+longtitle]]
+                        </div>
+                    </div>
+                </div>
+            </div>

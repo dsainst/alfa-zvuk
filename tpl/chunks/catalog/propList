@@ -1,0 +1,5 @@
+<table class="product_props">[[+inner]]</table>
+<!--tpl_separator-->
+    <tr>[[+inner]]</tr>
+<!--tpl_separator-->
+        <td>[[+field]]</td>

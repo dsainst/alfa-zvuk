@@ -1,0 +1,17 @@
+
+<div class="filter">
+    [[$filters-category]]
+</div>
+<div class="category-items">
+[[!FiltersCat? &parents=`[[*id]]`]]
+</div>
+<div class="clearfix"></div>
+<div class="relative">
+    <div class="parent">
+        <div class="inner">
+            <ul class="pagination" id="pages">
+                [[!+page.nav]]
+            </ul>
+        </div>
+    </div>
+</div>

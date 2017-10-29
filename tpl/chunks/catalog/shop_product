@@ -1,0 +1,19 @@
+<div class="product_block column one-fourth shk-item">   
+<a href="[[~[[+id]]]]">   
+    <img src="[[phpthumbon? &input=`assets/images/[[+tv.image]]` &options=`w=225&h=170&zc=0`]]" class="scale-with-grid wp-post-image" alt="[[+pagetitle]]">     
+    <span class="ico"></span>
+    <p>[[+pagetitle]]</p>
+</a>
+<form action="[[~[[*id]]? &scheme=`abs`]]" method="post">
+    <fieldset>
+        <input type="hidden" name="shk-id" value="[[+id]]" />
+        <input type="hidden" name="shk-name" value="[[+pagetitle]]" />
+        <input type="hidden" name="shk-count" value="1" />
+        <div class="product-price">
+        <div class="mprice"><span class="shk-price">[[+tv.price:num_format]]</span> руб.</div>
+            <button type="submit" class="shk-but">В корзину</button>
+            
+        </div>
+    </fieldset>
+</form>
+</div>

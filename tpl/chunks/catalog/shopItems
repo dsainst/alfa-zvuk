@@ -1,0 +1,49 @@
+                [[+tv.complect:isnotempty=`
+                    [[!Complect? &complect=`[[+tv.complect]]` &id=`[[+id]]` ]]
+                `]]
+                [[+complect]]
+                <div class="item-block shk-item">
+                    <div class="image" onclick="location.href='[[~[[+id]]]]'">
+                        <img src="[[phpthumbon?input=`[[+tv.image]]`&options=`w=193&h=128&zc=T`]]" alt="">
+                        [[+tv.tags:is=`1`:then=`
+                            <div class="sticker" style="background:[[+tv.color:isset=`[[+tv.color]]`]]">
+                                <span>SALE</span>
+                            </div>
+                        `]]
+                        [[+tv.tags:is=`2`:then=`
+                            <div class="sticker" style="background:[[+tv.color:isset=`[[+tv.color]]`]]">
+                                <span>HOT</span>
+                            </div>
+                        `]]
+                        [[+tv.tags:is=`3`:then=`
+                            <div class="sticker" style="background:[[+tv.color:isset=`[[+tv.color]]`]]">
+                                <span>NEW</span>
+                            </div>
+                        `]]
+                        [[+tv.tags:is=`4`:then=`
+                            <div class="sticker" style="background:[[+tv.color:isset=`[[+tv.color]]`]]">
+                                <span>[[+tv.sale:!empty=`[[+tv.sale]]`]]</span>
+                            </div>
+                        `]]
+                    </div>
+                    <div class="name">
+                        <span>[[+longtitle]]</span>
+                    </div>
+                    <form action="[[~[[*id]]? &scheme=`abs`]]" method="post">
+                        <div class="desc-wrap">
+                            <div class="model">[[+pagetitle]]</div>
+                            <div class="desc">[[+introtext]]</div>
+                            <div class="stars">
+                                [[!starRating? &starId=`[[+id]]` &starTpl=`star`]]
+                            </div>
+                                <input type="hidden" name="shk-id" value="[[+id]]" />
+                                <input type="hidden" name="shk-name" value="[[+pagetitle]]" />
+                                <input type="hidden" name="shk-count" value="1" />
+                                <div class="price"><span class="shk-price">[[+tv.price:num_format]]</span> Руб</div>
+                                
+                        </div>
+                        <div class="in-cart">
+                            <button type="submit" class="shk-but">В корзину</button>
+                        </div>
+                    </form>
+                </div>

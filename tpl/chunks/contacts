@@ -1,0 +1,18 @@
+[[+introtext.image:notempty=`<div class="column one-third">
+<div class="inner-padding">
+[[+introtext]]
+</div>
+</div>`]]
+
+<div class="">
+    <h3>Обратная связь</h3>
+    <div class="callback">[[$feed]]</div>
+    <div class="clearfix"></div>
+    <div class="column " style="width: 100%;">
+        <h3 style="margin-bottom: 20px;margin-top: 40px;">Как нас найти</h3>
+        <div class="mymap"  style="height: 400px;">
+            [[$yamap]]
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>

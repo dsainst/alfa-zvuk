@@ -1,0 +1,14 @@
+<div class="file">
+    <a href="[[+file]]" target="_blank">
+        [[+title:is=`pdf`:then=`
+        <img src="tpl/img/svg/pdfFileOutlinedInterfaceSymbol.svg" alt="">
+        `]]
+        [[+title:is=`dwg`:then=`
+        <img src="tpl/img/svg/dwgOutlinedFileSymbol.svg" alt="">
+        `]]
+        [[+title:is=`xls`:then=`
+        <img src="tpl/img/svg/xlsDocumentStrokeInterfaceSymbol.svg.svg" alt="">
+        `]]
+        <div class="download">Скачать <img src="tpl/img/svg/arrowNext.svg" class="simple" alt=""><img src="tpl/img/svg/arrowNextHover.svg" class="hover" alt=""></div>
+    </a>
+</div>

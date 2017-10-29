@@ -1,0 +1,19 @@
+<div class="Latest_posts inner-padding">
+<div class="header">
+<h3>Новости</h3>
+<a class="button-more" href="[[~6]]"></a>
+</div>
+<ul class="latest-post-slider-wrapper jcarousel-skin-tango">
+[[!pdoPage:default=`Нет новостей`? 
+&parents=`6` 
+&limit=`5` 
+&includeTVs=`1` 
+&includeTVList=`image`
+&tpl=`sidenews_tpl` 
+&sortby=`publishedon` 
+&cache=`1`
+&sortdir=`DESC`  
+]]
+
+</ul>
+</div>

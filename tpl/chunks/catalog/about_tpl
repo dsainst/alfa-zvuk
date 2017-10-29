@@ -1,0 +1,9 @@
+<div class="grid_3">
+    <div class="item" onclick="location.href='[[~[[+id]]]]'">
+        <div class="icon"><img src="[[+tv.image]]" alt=""></div>
+        <div class="h3">[[+pagetitle]]</div>
+        <div class="desc">
+            [[+description]]
+        </div>
+    </div>
+</div>

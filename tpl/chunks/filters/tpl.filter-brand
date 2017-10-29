@@ -1,0 +1,1 @@
+<option value="[[+id]]" [[*id:is=`[[+id]]`:then=`selected="selected"`]]>[[+pagetitle]]</option>

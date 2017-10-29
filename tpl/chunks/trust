@@ -1,0 +1,17 @@
+<div class="trust">
+    [[!pdoPage?
+        &elementClass=`modSnippet`
+        &element=`getResources`
+        &parents=`[[*id]]` 
+        &depth=`0`
+        &limit=`306` 
+        &includeTVs=`1` 
+        &includeTVList=`image`
+        &tpl=`trust_tpl`
+        &sortby=`menuindex` 
+        &sortdir=`ASC`
+    	&sortbyTV=`sort`
+    	&sortbyTVType=`integer`
+    	&sortdirTV=`ASC`
+    ]]
+</div>

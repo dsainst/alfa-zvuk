@@ -1,0 +1,177 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<div class="shk-item">
+    <div class="title">
+        <div class="img">
+            <img src="tpl/img/svg/az.svg" alt="">
+        </div>
+        <span>[[*pagetitle]]</span>
+    </div>
+    <table class="complex">
+        <tr>
+            <td>Фото</td>
+            <td>Описание</td>
+            <td>Цена</td>
+            <td>Кол-во</td>
+            <td>Сумма</td>
+        </tr>
+        <!--Здесь распарс комплекта-->
+        [[!Complect? &complect=`[[*complect]]` &id=`[[*id]]` &tpl=`tpl.complex` ]]
+    </table>
+    <div class="block-complect">
+        <div class="block-left">
+            <div class="block-grey">
+                <p>Ориентировочная стоимость услуги по монтажу 
+    и установки данного комплекта составляет <span>[[*price-install:num_format]] Руб</span></p>
+                <ul class="list">
+                    <li>Расчет указан для объектов распложенных в пределах МКАД.</li>
+                	<li>Без учета архитектурных особенностей помещения.</li>
+                	<li>Дневные работы в будний день.</li>
+                </ul>
+                <div class="tright">
+                    <a href="#modal_form" class="open_modal">
+                        Заказать предмонтажный выезд
+                        <img src="tpl/img/svg/arrowNext.svg" class="simple">
+                        <img src="tpl/img/svg/arrowNextHover.svg" class="hover">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="block-right">
+            <form action="[[~[[*id]]? &scheme=`abs`]]" method="post">
+                <input type="hidden" name="shk-id" value="[[*id]]" />
+                <input type="hidden" name="shk-count" value="1" />
+                <input type="hidden" name="shk-name" value="[[*pagetitle]]" />
+                <div class="price-wrap">
+                    Общая сумма:
+                    <div class="product-price">
+                        <span class="shk-price">[[*price:num_format]]</span> руб.
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <button type="submit" class="btn-red shk-but">В корзину</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>  
+<div id="product_description" class="column one">
+    <div id="tabs">
+        <ul>
+            <li><a href="[[~[[*id]]]]#fragment-1">Полное описание</a></li>
+            <li><a href="[[~[[*id]]]]#fragment-2">Характеристики</a></li>
+            <li><a href="[[~[[*id]]]]#fragment-3">Документация</a></li>
+            <li><a href="[[~[[*id]]]]#fragment-4">Отзывы</a></li>
+            <li><a href="[[~[[*id]]]]#fragment-5">Видео</a></li>
+        </ul>
+        <div class="wrap-tabs">
+            <div id="fragment-1">
+                [[*content]]
+            </div>
+            <div id="fragment-2">
+                <!-- Вывод характеристик в карточку товара -->
+                <div class="zebra">
+                    <table>
+                    [[*art:isnot=``:then=`<tr><td><span>Артикул:</span></td> <td>[[param_edit_table? &tvName=`art` &tpl=`checkBox`]]</td></tr>`]]
+                    [[*country:isnot=``:then=`<tr><td><span>Страна:</span></td> <td>[[param_edit_table? &tvName=`country` &tpl=`checkBox`]]</td></tr>`]]
+                    [[--*brand:isnot=``:then=`<tr><td><span>Бренд:</span> </td> <td>[[param_edit_table? &tvName=`brand` &tpl=`checkBox`]]</td></tr>`]]
+                    [[--*color:isnot=``:then=`<tr><td><span>Цвет:</span></td> <td>[[param_edit_table? &tvName=`color` &tpl=`checkBox`]]</td></tr>`]]
+                    [[*model:isnot=``:then=`<tr><td><span>Модель:</span> </td> <td>[[param_edit_table? &tvName=`model` &tpl=`checkBox`]]</td></tr>`]]
+                    [[--*tags:isnot=``:then=`<tr><td><span>Метки:</span></td> <td>[[param_edit_table? &tvName=`tags` &tpl=`checkBox`]]</td></tr>`]]
+                     [[!getImageList? &tvname=`tech` &tpl=`prodtech`]]
+                     </table>
+                </div>    
+            </div>
+            <div id="fragment-3" class="tab-doc">
+                <div class="intro">
+                    [[*doc-text]]
+                </div>
+                <div class="documents">
+                    [[getImageList? 
+                        &tvname=`documents`
+                        &tpl=`doc-tpl`
+                        &docid=`[[*id]]`
+                    ]]
+                </div>
+            </div>
+            <div id="fragment-4" class="reviews">
+                [[!pdoPage?
+                    &elementClass=`modSnippet`
+                    &element=`getResources`
+                    &parents=`[[*id]]`
+                    &showHidden=`1`
+                    &includeContent=`1`
+                    &limit=`10` 
+                    &tpl=`review-tpl`
+                    &sortby=`menuindex` 
+                    &sortdir=`DESC`
+                	&sortbyTV=`sort`
+                	&sortbyTVType=`integer`
+                	&sortdirTV=`ASC`
+                ]]
+            </div>
+            <div id="fragment-5" class="video">
+                <div class="container-video">
+                    [[*video]]
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("#tabs").tabs();
+    </script>
+</div>
+<div class="clearfix"></div>
+[[$uslugi]]
+<div class="clearfix"></div>
+<div class="similar">
+    <div class="h1 mb30">
+        <img src="tpl/img/svg/az.svg" alt="">
+        <span>С этим товаром покупают</span>
+    </div>
+    <div class="shop-items owl-theme">
+        [[!pdoPage?
+            &elementClass=`modSnippet`
+            &element=`getResources`
+            &resources=`[[*recommend]]` 
+            &limit=`16`
+            &includeTVs=`1` 
+            &includeTVList=`image,price,color,sale,tags`
+            &tpl=`shopItems`
+            &sortby=`menuindex` 
+            &sortdir=`ASC`
+        ]]
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="similar">
+    <div class="h1 mb30">
+        <img src="tpl/img/svg/az.svg" alt="">
+        <span>Похожие товары</span>
+    </div>
+    <div class="shop-items owl-theme">
+        [[!pdoPage?
+            &elementClass=`modSnippet`
+            &element=`getResources`
+            &resources=`[[*similar]]` 
+            &limit=`16`
+            &includeTVs=`1` 
+            &includeTVList=`image,price,color,sale,tags`
+            &tpl=`shopItems`
+            &sortby=`menuindex` 
+            &sortdir=`ASC`
+        ]]
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="similar">
+    <div class="h1 mb30">
+        <img src="tpl/img/svg/az.svg" alt="">
+        <span>Недавно просмотренные</span>
+    </div>
+    <div class="shop-items owl-theme">
+        [[!LastView? &limit=`10` &show=`1` &snippet=`pdoPage` &parents=`13` &tpl=`shopItems` &except=`[[++site_start]]`]]
+    </div>
+</div>
+

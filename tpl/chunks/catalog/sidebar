@@ -1,0 +1,19 @@
+<div class="sidebar mb20">
+    <div class="head">
+        <img src="tpl/img/svg/folder2.svg"
+             class="folder-2">
+        <span class="h3">[[#13.pagetitle]]</span>
+    </div>
+    [[pdoMenu? 
+        &level=`3` 
+        &templates=`8,3,10`
+        &parents=`13` 
+        &rowTpl=`rowtpl`
+        &innerTpl=`innerTpl`
+        &innerRowTpl=`innerRowTpl`
+        &countChildren=`1`
+    	&sortbyTV=`sort`
+    	&sortbyTVType=`integer`
+    	&sortdirTV=`ASC`
+    ]]
+</div>

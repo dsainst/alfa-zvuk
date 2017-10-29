@@ -1,0 +1,30 @@
+[[!Shopkeeper3@cart_order_page?propertySetName=`cart_order_page`
+&noConflict=`1`
+&cartTpl=`shopCart`
+&cartRowTpl=`shopCartRow`
+&orderDataRow=`orderData`
+&includeTVList=`image`
+]]
+<script type="text/javascript">
+jQuery(document).bind('ready',function(){
+    SHK.selectDelivery(jQuery('select[name="shk_delivery"]','#shopOrderForm').val());
+    jQuery('select[name="shk_delivery"]','#shopOrderForm').bind('change',function(){
+        SHK.selectDelivery(jQuery(this).val());
+    });
+});
+</script>
+
+[[!FormIt?
+&hooks=`spam,shk_fihook,email,FormItAutoResponder,redirect`
+&submitVar=`order`
+&emailTpl=`shopOrderReport`
+&fiarTpl=`shopOrderReport`
+&emailSubject=`В интернет-магазине "[[++site_name]]" сделан новый заказ`
+&fiarSubject=`Вы сделали заказ в интернет-магазине "[[++site_name]]"`
+&emailTo=`[[#1.tv.email]]`
+&redirectTo=`22`
+&validate=`fullname:required,email:email:required,address:required,phone:required`
+&errTpl=`<br /><span class="error">[[+error]]`
+]]
+
+[[$shopOrderForm]]

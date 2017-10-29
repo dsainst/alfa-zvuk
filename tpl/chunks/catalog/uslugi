@@ -1,0 +1,34 @@
+
+<div class="uslugi">
+    <div class="item">
+        <div class="img">
+            <img src="tpl/img/svg/1.svg" alt="">
+        </div>
+        <div class="title">Доставка по Москве
+            и в регионы</div>
+        <div class="desc">
+            При наведении курсора, здесь появляется более подробное описание особенностей монтажа и установки конкретного оборудования.
+        </div>
+    </div>
+    <div class="item">
+        <div class="img">
+            <img src="tpl/img/svg/2.svg" alt="">
+        </div>
+        <div class="title">Оплата</div>
+        <div class="desc">
+            При наведении курсора, здесь появляется более подробное описание особенностей монтажа и установки конкретного оборудования.
+        </div>
+    </div>
+    <div class="item">
+        <div class="img">
+            <img src="tpl/img/svg/3.svg" alt="">
+        </div>
+        <div class="title">Монтаж и установка</div>
+    </div>
+    <div class="item">
+        <div class="img">
+            <img src="tpl/img/svg/4.svg" alt="">
+        </div>
+        <div class="title">Техническая поддержка</div>
+    </div>
+</div>

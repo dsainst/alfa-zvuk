@@ -1,0 +1,11 @@
+
+<div class="item">
+    <div class="name">
+        [[+pagetitle]]
+        <p>[[+publishedon:dateRu]]</p>
+    </div>
+    <div class="desc">
+        <div class="intro">[[+content]]</div>
+        [[!starRating? &starId=`[[+id]]` &starTpl=`star`]]
+    </div>
+</div>

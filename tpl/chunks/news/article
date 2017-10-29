@@ -1,0 +1,20 @@
+<div class="title">
+    <div class="h1">
+        <span>[[#75.pagetitle]]</span>
+    </div>
+</div>
+[[!pdoPage?
+    &elementClass=`modSnippet`
+    &element=`getResources`
+    &parents=`75` 
+    &depth=`0`
+    &limit=`3` 
+    &includeTVs=`1` 
+    &includeTVList=`image`
+    &tpl=`article-tpl`
+    &sortby=`menuindex` 
+    &sortdir=`ASC`
+]]
+<div class="show-all">
+    <a href="[[~75]]" class="btn-show">Посмотреть все</a>
+</div>

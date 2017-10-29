@@ -1,0 +1,14 @@
+<div class="post">
+  <h2>
+    <a href="[[~[[+id]]]]">[[+pagetitle]]</a>
+  </h2>
+  <div class="meta">
+    <div class="date">
+      <i class="icon-calendar"></i>
+       [[+publishedon:date:dateRU]]
+    </div>
+  </div>
+  <div class="post_content">
+  [[+introtext]]
+ </div>
+</div>

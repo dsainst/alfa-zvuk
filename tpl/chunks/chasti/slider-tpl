@@ -1,0 +1,8 @@
+<li data-transition="random" data-slotamount="7" data-masterspeed="300">
+<img src="[[+image]]" alt="" data-fullwidthcentering="on">
+
+<div class="tp-caption boxed_large_green randomrotate" data-x="210" data-y="180" data-speed="1000" data-start="1500" data-easing="easeOutExpo">[[+title]]</div>
+
+<div class="tp-caption boxed_medium_dark fade" data-x="55" data-y="248" data-speed="1000" data-start="1800" data-easing="easeOutExpo">[[+title2]]</div>
+
+ </li>

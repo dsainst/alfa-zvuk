@@ -1,0 +1,5 @@
+<li>
+    <a href="#" class="product_img_small" data-img="[[+picture]]" data-smallimg="[[+picture:phpthumbon=`w=231&h=175&zc=2`]]">
+        <img src="[[+picture:phpthumbof=`w=55&h=55&zc=T&bg=FFFFFF`]]" alt="[[*pagetitle]]" width="55" height="55">  
+    </a>
+</li>

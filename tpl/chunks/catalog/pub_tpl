@@ -1,0 +1,13 @@
+<div class="grid_4">
+    <div class="item">
+        <div class="head">[[+pagetitle]]</div>
+        <div class="desc">
+            <p>[[+description]]</p>
+        </div>
+        <a href="[[~[[+id]]]]" class="more">
+            Подробнее
+            <img src="tpl/img/svg/arrowNext.svg" class="simple">
+            <img src="tpl/img/svg/arrowNextHover.svg" class="hover">
+        </a>
+    </div>
+</div>

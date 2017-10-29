@@ -1,0 +1,7 @@
+<div class="product_block column one-fourth">   
+<a href="[[~[[+id]]]]">     
+<img src="[[phpthumbon? &input=`[[+tv.image]]` &options=`w=225&h=170&far=1&aoe=0`]]" class="scale-with-grid wp-post-image" alt="[[+pagetitle]]">     
+<span class="ico"></span>
+<p>[[+pagetitle]]</p>
+</a>
+</div>

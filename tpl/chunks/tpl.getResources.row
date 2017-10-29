@@ -1,0 +1,15 @@
+<div>
+ <div class="photo">
+        <a href="[[+tv.image:phpthumbon=`w=1150`]]" data-lightbox="imagemy" ><img width="150" height="100" src="[[+tv.image:phpthumbon=`w=150`]]" class="scale-with-grid wp-post-image" alt="[[+pagetitle]]" /></a>    
+    </div>
+     <div class="desc">
+        <h3><a class="title" href="[[~[[+id]]]]">[[+pagetitle]]</a></h3>
+        
+            <p>
+                <span class="date"> [[+publishedon:date=`%d.%m.%Y`]]</span>|
+            </p>
+            <p>[[+introtext]]</p>
+    </div>
+   
+   
+</div>

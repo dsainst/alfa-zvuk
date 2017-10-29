@@ -1,0 +1,22 @@
+
+            <div class="service-section">
+                <div class="h1">
+                    <span class="h3">[[#47.pagetitle]]</span>
+                </div>
+                <div class="container2">
+                    [[!pdoPage?
+                        &parents=`47` 
+                        &limit=`6` 
+                        &cache=`1`
+                        &tpl=`service_tpl`
+                        &depth=`0`
+                        &includeTVs=`1` 
+                        &includeTVList=`image,icon,image-hover`
+                        &sortby=`menuindex` 
+                        &sortdir=`ASC`
+                    	&sortbyTV=`sort`
+                    	&sortbyTVType=`integer`
+                    	&sortdirTV=`ASC`
+                    ]]
+                </div>
+            </div>

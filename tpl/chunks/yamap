@@ -1,0 +1,38 @@
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+function init() {
+    var myMap = new ymaps.Map('map', {
+            center: [510, 110],
+            zoom: 1
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+    ymaps.geocode('[[#1.tv.address]]', {results: 1}).then(function (res) {
+            var firstGeoObject = res.geoObjects.get(0),
+                coords = firstGeoObject.geometry.getCoordinates(),
+                bounds = firstGeoObject.properties.get('boundedBy');
+            myMap.geoObjects.add(firstGeoObject);
+            myMap.setBounds(bounds, {
+                checkZoomRange: false
+            });
+
+            /* если хотим нестандартный баллун 
+             var myPlacemark = new ymaps.Placemark(coords, {
+             iconContent: '1',
+             balloonContent: '[[#1.tv.address]]'
+             }, {
+             preset: 'islands#icon',
+             iconColor: '#a5260a' //другие виды баллунов здесь https://tech.yandex.ru/maps/jsbox/2.1/placemark
+             });
+
+             myMap.geoObjects.add(myPlacemark);
+             */
+             
+             myMap.setCenter(coords);
+             myMap.setZoom(16);
+        });
+}
+ymaps.ready(init);
+</script>
+
+<div style="width:100%;height:100%;" id="map"></div>

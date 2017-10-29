@@ -1,0 +1,10 @@
+<div class="item-block" onclick="location.href='[[~[[+id]]]]'">
+    <div class="image">
+        <img src="[[phpthumbon?input=`[[+tv.image]]`&options=`w=170&h=170&zc=T`]]" alt="">
+    </div>
+    <div class="name">
+        [[+pagetitle]]
+    </div>
+    <span class="effect"></span>
+    <span class="effect two"></span>
+</div>

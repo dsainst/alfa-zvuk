@@ -1,0 +1,14 @@
+
+ <div id="result">
+    
+    <div class="rows">
+        [[!pdoPage@najax?
+            &parents=`6` 
+            &limit=`5` 
+            &cache=`1`
+            &tpl=`news_tpl`
+        ]]
+    </div>
+    
+    [[!+page.nav.news]]
+</div>

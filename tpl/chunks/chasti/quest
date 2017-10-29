@@ -1,0 +1,21 @@
+            <div class="quest-section">
+                <div class="image">
+                    <img src="tpl/img/shutterstock3564322101.jpg"
+                         srcset="tpl/img/shutterstock3564322101@2x.jpg 2x,
+                                 tpl/img/shutterstock3564322101@3x.jpg 3x"
+                         class="shutterstock-356432210-1">
+                </div>
+                <div class="quest">
+                    <div class="h1">
+                        <span class="h3">Остались вопросы?</span>
+                    </div>
+                    <div class="desc">
+                        <p>Чтобы получить консультации по подбору оборудования для организации профессионального звука и/или
+                            оформить заявку, нужно сделать запрос на нашем сайте.</p>
+                        <p>Вы можете воспользоваться формой обратной связи или позвонить менеджерам по контактным телефонам.</p>
+                    </div>
+                    <div class="btn-call">
+                        <a href="#modal_form" class="open_modal">Обратный звонок</a>
+                    </div>
+                </div>
+            </div>

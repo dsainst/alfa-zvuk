@@ -1,0 +1,116 @@
+<footer>
+    <div class="container_12">
+        <div class="grid_3">
+            <div class="logo">
+                <div class="logo-wrap">
+                    <img src="tpl/img/azLogo.svg" class="az-logo">
+                </div>
+                [[#1.description]]
+                <p>© 2017 "АЛЬФА ТЕХНОЛОДЖИС"</p>
+            </div>
+        </div>
+        <div class="grid_3">
+            <div class="contact">
+                <div class="item">
+                    <p>[[#1.tv.phone]]</p>
+                    <small>Бесплатный звонок по России</small>
+                </div>
+                <div class="item">
+                    <p>[[#1.tv.phone2]]</p>
+                    <small>Многоканальный</small>
+                </div>
+                <div class="item">
+                    <p>[[#1.tv.email]]</p>
+                    <small>Email</small>
+                </div>
+            </div>
+        </div>
+        <div class="grid_3">
+            <div class="social">
+                <p>Дружите с нами<br/>
+                    в социальных сетях</p>
+                <div class="social-wrap">
+                    <div class="block">
+                        <a href="[[#1.tv.fb]]">
+                            <img src="tpl/img/svg/facebook.svg"
+                                 class="simple">
+                            <img src="tpl/img/svg/facebookHover.svg"
+                                 class="hover">
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="[[#1.tv.vk]]">
+                            <img src="tpl/img/svg/vk.svg"
+                                 class="simple">
+                            <img src="tpl/img/svg/vkHover.svg"
+                                 class="hover">
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="[[#1.tv.ok]]">
+                            <img src="tpl/img/svg/iconOk.svg"
+                                 class="simple">
+                            <img src="tpl/img/svg/iconOkHover.svg"
+                                 class="hover">
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="[[#1.tv.insta]]">
+                            <img src="tpl/img/svg/insta.svg"
+                                 class="simple">
+                            <img src="tpl/img/svg/instHover.svg"
+                                 class="hover">
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="[[#1.tv.twitter]]">
+                            <img src="tpl/img/svg/twitter.svg"
+                                 class="simple">
+                            <img src="tpl/img/svg/twitterHover.svg"
+                                 class="hover">
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="[[#1.tv.google]]">
+                            <img src="tpl/img/svg/googlePlus.svg"
+                                 class="simple">
+                            <img src="tpl/img/svg/googlePlusHover.svg"
+                                 class="hover">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid_3">
+            <div class="call">
+                <div class="img">
+                    <img src="tpl/img/svg/auricularPhoneSymbolInACircle.svg" alt="">
+                </div>
+                <p>Оставьте заявку на обратный звонок</p>
+            </div>
+            <div class="show-all">
+                <a href="#modal_form" class="btn-show open_modal">Обратный звонок</a>
+            </div>
+            
+                [[$liveinternet]]
+        </div>
+    </div>
+</footer>
+
+<div id="modal_form" class="modal_div">
+	<span class="modal_close">x</span>
+        <h2>Обратный звонок</h2>
+        [[$feedz]]
+</div>
+<div id="modal_form2" class="modal_div">
+	<span class="modal_close">x</span>
+        <h2>Оформить заявку</h2>
+        [[$feedzz]]
+</div>
+<div id="overlay"></div>
+
+<!-- javascript -->
+<script src="tpl/js/jquery.animateNumber.js"></script>
+<script src="tpl/js/owl.carousel.js"></script>
+<script src="tpl/js/main.js"></script>
+<script src="tpl/js/filters.js"></script>

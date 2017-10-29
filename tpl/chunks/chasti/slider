@@ -1,0 +1,7 @@
+<div id="slider">
+[[getImageList? 
+&tvname=`slider`
+&tpl=`slider-tpl`
+&docid=`1`
+]]
+</div>

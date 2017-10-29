@@ -1,0 +1,28 @@
+<tr>
+    <td>
+        <div class="img">
+            <img src="[[+image:phpthumbon=`w=100&h=100&zc=2`]]" alt="">
+        </div>
+    </td>
+    <td>
+        <div class="name">
+            [[+pagetitle]]
+        </div>
+        <div class="desc">
+            [[+longtitle]]
+        </div>
+    </td>
+    <td>
+        <div class="price">[[+price:num_format]] Руб</div>
+    </td>
+    <td>
+        <div class="count">
+            x[[+count]]
+        </div>
+    </td>
+    <td>
+        <div class="summa">
+            [[+summa:num_format]] Руб
+        </div>
+    </td>
+</tr>

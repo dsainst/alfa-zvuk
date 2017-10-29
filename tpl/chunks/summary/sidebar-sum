@@ -1,0 +1,8 @@
+<div class="sidebar">
+    <div class="head">
+        <img src="tpl/img/svg/folder2.svg"
+             class="folder-2">
+        <span class="h3">[[#46.pagetitle]]</span>
+    </div>
+    [[pdoMenu? &level=`1` &parents=`46` &rowTpl=`rowtpl-sum` &countChildren=`1`]]
+</div>

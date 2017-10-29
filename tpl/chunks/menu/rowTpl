@@ -1,0 +1,4 @@
+<li [[+wf.classes]]>
+    <a href="[[+wf.link]]">[[+wf.linktext]]<span>[[+children]]</span></a>
+[[+wf.wrapper]]
+</li>

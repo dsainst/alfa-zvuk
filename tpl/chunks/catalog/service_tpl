@@ -1,0 +1,16 @@
+<div class="grid_4">
+    <div class="item" onclick="location.href='[[~[[+id]]]]'">
+        <div class="img">
+            <img src="[[+tv.image]]" class="simple">
+            <img src="[[+tv.image-hover]]" class="hover">
+        </div>
+        <div class="head">[[+pagetitle]]</div>
+        <div class="desc">
+            [[+description]]
+        </div>
+        <a href="[[~[[+id]]]]" class="more">
+            Подробнее
+            <img src="tpl/img/svg/arrowNext.svg" class="arrow-next">
+        </a>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+
+<table>
+    <tr>
+        <td>Категории</td>
+        <td>
+            <select name="category" id="category">
+                <option value="0">Все</option>
+                [[!pdoPage?
+                    &elementClass=`modSnippet`
+                    &element=`getResources`
+                    &parents=`13` 
+                    &depth=`0`
+                    &where=`{"template":3}`
+                    &tpl=`tpl.filter-cat`
+                    &sortby=`menuindex` 
+                    &sortdir=`ASC`
+                ]]
+            </select>
+        </td>
+        <td>Подкатегории</td>
+        <td>
+            <select name="podcat" id="podcat">
+                <option value="0">Все</option>
+                [[!pdoPage?
+                    &elementClass=`modSnippet`
+                    &element=`getResources`
+                    &parents=`13` 
+                    &depth=`10`
+                    &tplPageActive=`tpl.filter-cat-active`
+                    &tpl=`tpl.filter-cat`
+                    &where=`{"template":10}`
+                    &sortby=`menuindex` 
+                    &sortdir=`ASC`
+                ]]
+            </select>
+        </td>
+        <td>Бренды</td>
+        <td>
+        <form action="[[~[[*id]]]]" class="filters-cat">
+            <select name="brands" id="brands">
+                <option value="0">Все</option>
+                [[!pdoPage?
+                    &elementClass=`modSnippet`
+                    &element=`getResources`
+                    &parents=`81` 
+                    &depth=`0`
+                    &where=`{"template":15}`
+                    &tpl=`tpl.filter-brand`
+                    &sortby=`menuindex` 
+                    &sortdir=`ASC`
+                ]]
+            </select>
+        </form>
+        </td>
+    </tr>
+</table>

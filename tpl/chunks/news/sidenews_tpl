@@ -1,0 +1,12 @@
+<li>
+    <div class="photo">
+        <a class="title" href="[[~[[+id]]]]"><img width="150" height="100" src="[[phpthumbon?input=`[[+tv.image]]`&options=`w=150&h=100&zc=T`]]" class="scale-with-grid wp-post-image" alt="[[+pagetitle]]" /></a>
+    </div>
+    
+    <div class="desc">
+        <h6><a class="title" href="[[~[[+id]]]]">[[+pagetitle]]</a></h6>
+            <p>
+                <span class="date"> [[+publishedon:date=`%d.%m.%Y`]]</span>|
+            </p>
+    </div>
+</li>

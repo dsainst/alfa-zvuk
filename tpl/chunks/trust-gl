@@ -1,0 +1,22 @@
+<div class="carousel">
+    <div class="owl-carousel">
+    [[!pdoPage?
+        &elementClass=`modSnippet`
+        &element=`getResources`
+        &parents=`84`
+        &depth=`0`
+        &limit=`20`
+        &includeTVs=`1`
+        &includeTVList=`image`
+        &tpl=`trust-gl_tpl`
+        &sortby=`menuindex` 
+        &sortdir=`ASC`
+    	&sortbyTV=`sort`
+    	&sortbyTVType=`integer`
+    	&sortdirTV=`ASC`
+    ]]
+    </div>
+    <div class="show-all">
+        <a href="[[~84]]" class="btn-show">Посмотреть все</a>
+    </div>
+</div>
