@@ -71,7 +71,7 @@
         </div>
         <div class="btn-wrap">
             <button type="submit" class="btn-red shk-but">В корзину</button>
-            <button type="button" class="btn-white">Купить в 1 клик</button>
+            <a href="#modal_form2" class="btn-white open_modal btn-1click" data-title="[[*pagetitle]]" data-id="[[*id]]">Купить в 1 клик</a>
         </div>
     </form>
 </div>

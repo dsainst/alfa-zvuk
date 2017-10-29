@@ -5,7 +5,7 @@
                 <div class="city">
                     <span>Ваш город:</span>
                     <ul>
-                        <li class="active"><a href="#">Москва</a></li>
+                        <li class="active"><a href="[[++site_url]]">Москва</a></li>
                         <li><a href="#">Ижевск</a></li>
                     </ul>
                 </div>

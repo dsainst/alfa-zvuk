@@ -7,7 +7,7 @@
         <img src="tpl/img/svg/dwgOutlinedFileSymbol.svg" alt="">
         `]]
         [[+title:is=`xls`:then=`
-        <img src="tpl/img/svg/xlsDocumentStrokeInterfaceSymbol.svg.svg" alt="">
+        <img src="tpl/img/svg/xlsDocumentStrokeInterfaceSymbol.svg" alt="">
         `]]
         <div class="download">Скачать <img src="tpl/img/svg/arrowNext.svg" class="simple" alt=""><img src="tpl/img/svg/arrowNextHover.svg" class="hover" alt=""></div>
     </a>
