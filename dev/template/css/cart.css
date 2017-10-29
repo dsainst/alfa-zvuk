@@ -1,3 +1,36 @@
+.tab-doc .documents a {
+  display: block;
+  width: 146px;
+  height: 146px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #e8e8e8;
+  padding: 25px 33px 5px;
+  margin-right: 50px;
+}
+.tab-doc .documents a .download {
+  font-size: 15px;
+  font-weight: 900;
+  color: #221e1f;
+}
+.tab-doc .documents a .download .hover {
+  display: none;
+}
+.tab-doc .documents a .download .simple {
+  display: inline-block;
+}
+.tab-doc .documents a:hover .download {
+  color: #c0050b;
+}
+.tab-doc .documents a:hover .download .simple {
+  display: none;
+}
+.tab-doc .documents a:hover .download .hover {
+  display: inline-block;
+}
+.tab-doc .intro {
+  margin-bottom: 35px;
+}
 .cart .reviews .item {
   overflow: hidden;
   border-top: 1px solid #e8e8e8;
@@ -49,39 +82,6 @@
   padding: 10px 20px;
   font-size: 15px;
   color: #221e1f;
-}
-.cart .tab-doc .documents a {
-  display: block;
-  width: 146px;
-  height: 146px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  border: solid 1px #e8e8e8;
-  padding: 25px 33px 5px;
-  margin-right: 50px;
-}
-.cart .tab-doc .documents a .download {
-  font-size: 15px;
-  font-weight: 900;
-  color: #221e1f;
-}
-.cart .tab-doc .documents a .download .hover {
-  display: none;
-}
-.cart .tab-doc .documents a .download .simple {
-  display: inline-block;
-}
-.cart .tab-doc .documents a:hover .download {
-  color: #c0050b;
-}
-.cart .tab-doc .documents a:hover .download .simple {
-  display: none;
-}
-.cart .tab-doc .documents a:hover .download .hover {
-  display: inline-block;
-}
-.cart .tab-doc .intro {
-  margin-bottom: 35px;
 }
 .cart .block-img {
   width: 263px;

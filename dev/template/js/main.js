@@ -1,4 +1,13 @@
 jQuery(document).ready(function($) {
+    $('.btn-1click').click(function (erirle) {
+        erirle.preventDefault();
+        var idzz = $(this).data('idzz');
+        var titlezz = $(this).data('titlezz');
+        $('#modal_form2 .tovar-id').val(idzz);
+        $('#modal_form2 .tovar-title').val(titlezz);
+    });
+
+
     var owl = $('.owl-carousel');
     var owl2 = $('.shop-items');
     var cartProduct = $('.carousel-min');

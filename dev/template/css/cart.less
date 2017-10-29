@@ -1,3 +1,43 @@
+.tab-doc {
+  .documents {
+    a {
+      display: block;
+      width: 146px;
+      height: 146px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      border: solid 1px #e8e8e8;
+      padding: 25px 33px 5px;
+      margin-right: 50px;
+      .download {
+        font-size: 15px;
+        font-weight: 900;
+        color: #221e1f;
+        .hover {
+          display: none;
+        }
+        .simple {
+          display: inline-block;
+        }
+      }
+      &:hover {
+        .download {
+          color: #c0050b;
+          .simple {
+            display: none;
+          }
+          .hover {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .intro {
+    margin-bottom: 35px;
+  }
+}
+
 .cart {
   .reviews {
     .item {
@@ -61,45 +101,7 @@
       }
     }
   }
-  .tab-doc {
-    .documents {
-      a {
-        display: block;
-        width: 146px;
-        height: 146px;
-        border-radius: 4px;
-        background-color: #ffffff;
-        border: solid 1px #e8e8e8;
-        padding: 25px 33px 5px;
-        margin-right: 50px;
-        .download {
-          font-size: 15px;
-          font-weight: 900;
-          color: #221e1f;
-          .hover {
-            display: none;
-          }
-          .simple {
-            display: inline-block;
-          }
-        }
-        &:hover {
-          .download {
-            color: #c0050b;
-            .simple {
-              display: none;
-            }
-            .hover {
-              display: inline-block;
-            }
-          }
-        }
-      }
-    }
-    .intro {
-      margin-bottom: 35px;
-    }
-  }
+
   .block-img {
     width: 263px;
     margin-right: 33px;
