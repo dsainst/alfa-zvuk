@@ -1387,7 +1387,7 @@ ul.pagination li.active a {
   border-bottom: 0;
   display: inline-block;
   float: left;
-  margin: 0 17px 60px;
+  margin: 0 17px 40px;
   cursor: pointer;
 }
 #content .summary .item-block:last-child,
@@ -1409,13 +1409,14 @@ ul.pagination li.active a {
   text-align: center;
   max-width: 100%;
   overflow: hidden;
-  padding: 10px;
+  padding: 10px 10px 0;
   border-bottom: 1px solid #e8e8e8;
 }
 #content .summary .item-block .image img,
 #content .catalog .item-block .image img {
   max-width: 100%;
   height: auto;
+  max-height: 100%;
 }
 #content .summary .item-block .name,
 #content .catalog .item-block .name {
@@ -1462,6 +1463,9 @@ ul.pagination li.active a {
 #content .summary .item-block:hover .effect.two,
 #content .catalog .item-block:hover .effect.two {
   bottom: -20px;
+}
+#content .catalog .item-block .image {
+  height: 150px;
 }
 #content .summary {
   overflow: hidden;
