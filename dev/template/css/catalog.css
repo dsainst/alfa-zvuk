@@ -360,6 +360,9 @@ body {
 #content {
   /* end of content */
 }
+#content .content .justifyfull {
+  text-align: justify;
+}
 #content h1 a,
 #content h2 a,
 #content h3 a,
@@ -406,6 +409,9 @@ body {
 #content .post .meta {
   margin: 10px 0;
   color: #bbbbbb;
+}
+#content .post .post_content {
+  text-align: justify;
 }
 #content p {
   line-height: 1.4em;
