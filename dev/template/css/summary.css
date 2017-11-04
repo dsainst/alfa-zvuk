@@ -110,3 +110,38 @@
   border-color: #c0050b;
   color: #fff;
 }
+#content .mygaltable {
+  margin-bottom: 40px;
+}
+#content .mygaltable tr {
+  width: 420px;
+  max-height: 128px;
+  float: left;
+  margin: 0 15px 15px;
+  border: 1px solid #ddd;
+  padding: 3px;
+  box-shadow: 3px 3px 2px #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#content .mygaltable tr td img {
+  border-radius: 4px;
+}
+#content .mygaltable tr td a {
+  color: #221e1f;
+}
+#content .mygaltable tr td p {
+  margin-bottom: 0;
+  margin-top: 5px;
+  text-align: justify;
+  line-height: 1.2em;
+}
+#content .mygaltable tr:hover .mygaltable tr:hover {
+  border: 1px solid #c0050b;
+}
+#content .mygaltable tr:nth-child(odd) {
+  margin-left: 0;
+}
+#content .mygaltable tr:nth-child(even) {
+  margin-right: 0;
+}

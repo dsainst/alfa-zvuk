@@ -3,7 +3,7 @@
     
     <div class="rows">
         [[!pdoPage@najax?
-            &parents=`6` 
+            &parents=`[[*id]]` 
             &limit=`5` 
             &cache=`1`
             &tpl=`news_tpl`

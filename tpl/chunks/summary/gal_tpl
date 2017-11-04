@@ -1,0 +1,16 @@
+<tr>
+	<td align="center" valign="top" height="120" width="120">
+        <a href="[[~[[+id]]]]">
+            <img height="120" width="120" alt="" title="" src="[[phpthumbon?input=`[[+tv.image]]`&options=`w=120&h=120&zc=T`]]">
+        </a>
+    </td>
+    <td align="left" valign="top" width="*" style="padding-left:10px;padding-right:5px;">
+        <a class="nDate" href="[[~[[+id]]]]">
+            <strong class="textgall">[[+pagetitle]]</strong>
+        </a>
+        <p>
+            <a class="subMenu" href="/gallery1/salonyi-krasotyi-i-spa-salonyi1/tochka-krasotyi.html">
+                <span class="descgall">[[+description]]</span></a>
+        </p>
+    </td>
+</tr>

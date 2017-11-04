@@ -119,4 +119,43 @@
     }
 
   }
+  .mygaltable {
+    margin-bottom: 40px;
+    tr {
+      width: 420px;
+      max-height: 128px;
+      float: left;
+      margin: 0 15px 15px;
+      border: 1px solid #ddd;
+      padding: 3px;
+      box-shadow: 3px 3px 2px #eee;
+      border-radius: 4px;
+      overflow: hidden;
+      td {
+        img {
+          border-radius: 4px;
+        }
+        a {
+          color: #221e1f;
+        }
+        p {
+          margin-bottom: 0;
+          margin-top: 5px;
+          text-align: justify;
+          line-height: 1.2em;
+        }
+      }
+      &:hover {
+        .mygaltable tr:hover {
+          border: 1px solid #c0050b;
+        }
+      }
+      &:nth-child(odd) {
+        margin-left: 0;
+      }
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
+  }
 }

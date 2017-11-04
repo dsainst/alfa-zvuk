@@ -1,23 +1,20 @@
 
-            <div class="filter"></div>
-            
             <div class="summary">
                 [[!pdoPage?
-                &elementClass=`modSnippet`
-                &element=`getResources`
-                &parents=`[[*id]]` 
-                &depth=`0`
-                &limit=`16` 
-                &includeTVs=`1` 
-                &includeTVList=`image,icon`
-                &tpl=`sum_tpl`
-                &sortby=`menuindex` 
-                &sortdir=`ASC`
-            	&sortbyTV=`sort`
-            	&sortbyTVType=`integer`
-            	&sortdirTV=`ASC`
+                    &elementClass=`modSnippet`
+                    &element=`getResources`
+                    &parents=`[[*id]]` 
+                    &depth=`0`
+                    &limit=`16` 
+                    &includeTVs=`1` 
+                    &includeTVList=`image,icon`
+                    &tpl=`sum_tpl`
+                    &sortby=`menuindex` 
+                    &sortdir=`ASC`
+                	&sortbyTV=`sort`
+                	&sortbyTVType=`integer`
+                	&sortdirTV=`ASC`
                 ]]
-                
                 <ul class="pagination">[[!+page.nav]]</ul>
             </div>
             <div class="clearfix"></div>

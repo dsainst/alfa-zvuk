@@ -1,0 +1,23 @@
+
+            <div class="summary">
+                <table class="mygaltable">
+                [[!pdoPage?
+                    &elementClass=`modSnippet`
+                    &element=`getResources`
+                    &parents=`[[*id]]` 
+                    &depth=`0`
+                    &limit=`16` 
+                    &includeTVs=`1` 
+                    &includeTVList=`image,icon`
+                    &tpl=`gal_tpl`
+                    &sortby=`menuindex` 
+                    &sortdir=`ASC`
+                	&sortbyTV=`sort`
+                	&sortbyTVType=`integer`
+                	&sortdirTV=`ASC`
+                ]]
+                </table>
+                <ul class="pagination">[[!+page.nav]]</ul>
+            </div>
+            <div class="clearfix"></div>
+            

@@ -4,7 +4,7 @@
                     &parents=`46` 
                     &limit=`15` 
                     &cache=`1`
-                    &tpl=`sum_tpl`
+                    &tpl=`gal_tpl`
                     &includeTVs=`1` 
                     &includeTVList=`image, icon`
                     &depth=`0`
