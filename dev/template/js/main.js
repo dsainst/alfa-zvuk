@@ -42,11 +42,9 @@ jQuery(document).ready(function($) {
     /* ----------- FIXED TOP MENU BEGIN -------------- */
     var h_hght = 210, // ������ �����
         h_mrg = 48;    // ������ ����� ����� ��� �� �����
-
     $(window).scroll(function() {
         var top = $(this).scrollTop();
-        var elem = $('#top-menu');
-
+        var elem = $('#top-menu .slip-menu');
         //elem2 = $('.top-line');
         //if (top>0) elem2.addClass('fixed-menu'); else elem2.removeClass('fixed-menu');
         if (top+h_mrg < h_hght) {

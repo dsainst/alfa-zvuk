@@ -61,7 +61,7 @@
     </div>
 </div>
 <div id="top-menu">
-    <div class="container_12">
+    <div class="slip-menu">
 [[pdoMenu? &level=`1` &parents=`0` &tplOuter=`outerTpl` &tplInner=`innerTpl` &outerClass=`menu-main-menu-container`]]
     </div>
 </div>
