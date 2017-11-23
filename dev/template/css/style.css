@@ -364,7 +364,8 @@ body {
 #content {
   /* end of content */
 }
-#content .content .justifyfull {
+#content .content .justifyfull,
+#tabs .justifyfull {
   text-align: justify;
 }
 #content .content .mytable {

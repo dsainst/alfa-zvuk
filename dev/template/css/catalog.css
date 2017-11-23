@@ -1654,6 +1654,12 @@ ul.pagination li.active a {
   height: 44px;
   overflow: hidden;
 }
+#content .category-items .item-block .name span,
+#content .shop-items .item-block .name span {
+  height: 100%;
+  overflow: hidden;
+  display: block;
+}
 #content .category-items .item-block .desc-wrap,
 #content .shop-items .item-block .desc-wrap {
   padding: 7px 20px 20px;
@@ -1672,6 +1678,8 @@ ul.pagination li.active a {
   color: #221e1f;
   margin-bottom: 10px;
   max-width: 100%;
+  height: 70px;
+  overflow: hidden;
 }
 #content .category-items .item-block .desc-wrap .stars,
 #content .shop-items .item-block .desc-wrap .stars {

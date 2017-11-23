@@ -300,6 +300,13 @@
 #tabs {
   margin: 40px 0;
 }
+#tabs .justifyfull {
+  text-align: justify;
+}
+#tabs p {
+  color: #1a1a1a;
+  font-weight: 400;
+}
 #tabs > ul {
   padding: 0;
   margin: 0;
