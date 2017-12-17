@@ -4,7 +4,7 @@
             &parents=`[[*id]]` 
             &limit=`5` 
             &cache=`1`
-            &tpl=`news_tpl`
+            &tpl=`news-pub_tpl`
         ]]
     </div>
     

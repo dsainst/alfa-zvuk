@@ -28,6 +28,8 @@
                     &limit=`15` 
                     &cache=`1`
                     &tpl=`cat_tpl`
+                    &includeTVs=`1` 
+                    &includeTVList=`image`
                     &depth=`0`
                     &sortby=`menuindex` 
                     &sortdir=`ASC`
@@ -63,6 +65,8 @@
             &parents=`2` 
             &resources=`54,55,56,57` 
             &cache=`1`
+            &includeTVs=`1` 
+            &includeTVList=`image`
             &tpl=`about_tpl`
             &depth=`0`
         ]]
@@ -154,6 +158,8 @@
             &parents=`47` 
             &limit=`6` 
             &cache=`1`
+            &includeTVs=`1` 
+            &includeTVList=`image, image-hover`
             &tpl=`service_tpl`
             &depth=`0`
         ]]
@@ -163,9 +169,8 @@
 <div class="quest-section">
     <div class="container_12">
         <div class="image">
-            <img src="tpl/img/shutterstock3564322101.jpg"
-                 srcset="tpl/img/shutterstock3564322101@2x.jpg 2x,
-                         tpl/img/shutterstock3564322101@3x.jpg 3x"
+            <img src="tpl/img/shutterstock3564322101@3x.jpg"
+                 srcset="tpl/img/shutterstock3564322101@3x.jpg"
                  class="shutterstock-356432210-1">
         </div>
         <div class="quest">

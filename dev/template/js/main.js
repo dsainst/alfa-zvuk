@@ -19,9 +19,10 @@ jQuery(document).ready(function($) {
         dots: true,
         navText: ['<span class="left"></span>', '<span class="right"></span>']
     });
+
     owl2.owlCarousel({
         margin: 30,
-        loop: true,
+        loop: false,
         items: 4,
         dots: true,
         autoplay: true

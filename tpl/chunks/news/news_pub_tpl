@@ -1,0 +1,8 @@
+<div class="post">
+  <h2>
+    <a href="[[~[[+id]]]]">[[+pagetitle]]</a>
+  </h2>
+  <div class="post_content">
+  [[+introtext]]
+ </div>
+</div>

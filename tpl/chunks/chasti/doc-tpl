@@ -11,4 +11,5 @@
         `]]
         <div class="download">Скачать <img src="tpl/img/svg/arrowNext.svg" class="simple" alt=""><img src="tpl/img/svg/arrowNextHover.svg" class="hover" alt=""></div>
     </a>
+    <p>[[+desc]]</p>
 </div>

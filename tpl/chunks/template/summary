@@ -24,6 +24,7 @@
                 [[$summary_page]]
                 <div class="clearfix"></div>
             <div class="complects">
+                [[*complects:notempty=`
                 <div class="h1 mb30">
                     <img src="tpl/img/svg/az.svg" alt="">
                     <span>[[#71.pagetitle]]</span>
@@ -32,11 +33,10 @@
                     [[!pdoPage?
                         &elementClass=`modSnippet`
                         &element=`getResources`
-                        &parents=`71` 
                         &limit=`12`
+                        &resources=`[[*complects]]`
                         &includeTVs=`1` 
                         &includeTVList=`image,price,color,sale,tags`
-                        &tvFilters=`recomended==1`
                         &tpl=`shopItems`
                         &sortby=`menuindex` 
                         &sortdir=`ASC`
@@ -45,6 +45,7 @@
                 <div class="show-all">
                     <a href="[[~71]]" class="btn-show">Посмотреть все</a>
                 </div>
+                `]]
             </div>
             <div class="clearfix"></div>
              <div id="callback-block" class="mb50"></div>

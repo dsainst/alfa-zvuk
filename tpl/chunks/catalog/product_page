@@ -38,7 +38,7 @@
 </div>
 <div class="desc shk-item">
     <div class="title">
-        [[*longtitle:isempty=`[[*pagetitle]]`]]
+        [[*longtitle]]
     </div>
     [[*longtitle:isnotempty=`
     <div class="name">
@@ -52,10 +52,10 @@
         [[*art]]
     </div>
     `]]
-    [[*description:isnotempty=`
+    [[*introtext:isnotempty=`
     <div class="intro">
         <div class="op">Описание товара:</div>
-        [[*description]]
+        [[*introtext]]
     </div>
     `]]
     <form action="[[~[[*id]]? &scheme=`abs`]]" method="post">
@@ -82,8 +82,8 @@
             <li><a href="[[~[[*id]]]]#fragment-1">Полное описание</a></li>
             <li><a href="[[~[[*id]]]]#fragment-2">Характеристики</a></li>
             <li><a href="[[~[[*id]]]]#fragment-3">Документация</a></li>
-            <li><a href="[[~[[*id]]]]#fragment-4">Отзывы</a></li>
-            <li><a href="[[~[[*id]]]]#fragment-5">Видео</a></li>
+            <!--li><a href="[[~[[*id]]]]#fragment-4">Отзывы</a></li-->
+            [[*video:isnotnull=`<li><a href="[[~[[*id]]]]#fragment-5">Видео</a></li>`]]
         </ul>
         <div class="wrap-tabs">
             <div id="fragment-1">

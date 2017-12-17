@@ -1,7 +1,7 @@
-            <div class="realize">
+
                 <div class="item-block" onclick="location='[[~[[+id]]]]'">
                     <div class="image">
-                        <img src="[[phpthumbon?input=`[[+tv.image]]`&options=`w=196&h=130&zc=T`]]" alt="">
+                        <img src="[[phpthumbon?input=`[[+tv.image]]`&options=`w=196&h=205&zc=T`]]" alt="">
                     </div>
                     <div class="wrap">
                         <div class="name">
@@ -12,4 +12,3 @@
                         </div>
                     </div>
                 </div>
-            </div>

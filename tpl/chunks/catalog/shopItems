@@ -4,7 +4,7 @@
                 [[+complect]]
                 <div class="item-block shk-item">
                     <div class="image" onclick="location.href='[[~[[+id]]]]'">
-                        <img src="[[phpthumbon?input=`[[+tv.image]]`&options=`w=193&h=128&zc=T`]]" alt="">
+                        <img src="[[phpthumbon?input=`[[+tv.image]]`&options=`w=193&h=128&zc=2`]]" alt="">
                         [[+tv.tags:is=`1`:then=`
                             <div class="sticker" style="background:[[+tv.color:isset=`[[+tv.color]]`]]">
                                 <span>SALE</span>
@@ -27,12 +27,12 @@
                         `]]
                     </div>
                     <div class="name">
-                        <span>[[+longtitle]]</span>
+                        <span>[[#[[+tv.brand]].pagetitle]]</span>
                     </div>
                     <form action="[[~[[*id]]? &scheme=`abs`]]" method="post">
                         <div class="desc-wrap">
                             <div class="model">[[+pagetitle]]</div>
-                            <div class="desc">[[+introtext]]</div>
+                            [[+longtitle:!empty=`<div class="desc">[[+longtitle]]</div>`]]
                             <div class="stars">
                                 [[!starRating? &starId=`[[+id]]` &starTpl=`star`]]
                             </div>

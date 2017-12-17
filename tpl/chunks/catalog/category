@@ -28,7 +28,7 @@
                     <span>Рекомендуемые товары</span>
                 </div>
                 <div class="shop-items owl-theme">
-                    [[!pdoPage?
+                    [[--!pdoPage?
                         &elementClass=`modSnippet`
                         &element=`getResources`
                         &parents=`[[*id]]` 

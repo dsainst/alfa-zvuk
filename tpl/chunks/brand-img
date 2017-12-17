@@ -1,5 +1,5 @@
 <div class="brand">
     <a href="[[~[[+id]]]]">
-        <img src="[[*brand-img]]" alt="">
+        <img src="[[+tv.brand-img]]" alt="">
     </a>
 </div>

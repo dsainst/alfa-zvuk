@@ -2,7 +2,7 @@
     <div class="item">
         <div class="head">[[+pagetitle]]</div>
         <div class="desc">
-            <p>[[+description]]</p>
+            <p>[[+introtext]]</p>
         </div>
         <a href="[[~[[+id]]]]" class="more">
             Подробнее
