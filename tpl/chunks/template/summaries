@@ -21,6 +21,10 @@
                 [[$service]]
             </div>
             <div class="grid_9">
+                
+                <div class="filter">
+                    [[--$filters]]
+                </div>
                [[$tplSummary]]
              </div>
          </div>

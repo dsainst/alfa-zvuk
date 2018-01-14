@@ -18,6 +18,9 @@ body {
   font-family: 'Roboto', sans-serif;
   min-width: 1200px;
 }
+.content .btn-more {
+  margin-top: 40px;
+}
 .show-all {
   text-align: center;
   margin: 40px 0;
@@ -454,6 +457,31 @@ body {
     border-top: 1px solid #e8e8e8;
     padding-top: 20px;
     margin-top: 40px;
+    overflow: hidden;
+    .desc {
+      display: inline-block;
+      float: left;
+      max-width: 660px;
+      h2 {
+        margin-top: 0;
+      }
+      &.long {
+        max-width: 100%;
+      }
+
+    }
+    .image {
+      float: left;
+      display: inline-block;
+      margin: 0 20px 0 0;
+      max-width: 190px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+      }
+    }
+
     &:first-child {
       border-top: 0;
       margin-top: 0;

@@ -89,7 +89,7 @@
             [[$service]]
             <div class="clearfix"></div>
             [[$quest]]
-            
+    [[*bomba-title:isnotempty=`
     <div class="bomba">
         <div class="h1">
             <img src="tpl/img/svg/az.svg" alt="">
@@ -97,6 +97,6 @@
         </div>
         [[*bomba]]
     </div>
-
+`]]
         </div>
         <div class="clearfix"></div>

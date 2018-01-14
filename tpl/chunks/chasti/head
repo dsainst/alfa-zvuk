@@ -6,6 +6,6 @@
     <meta name="keywords" content="[[*keywords]]" />
     <meta name="description" content="[[*meta-desc]]">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="tpl/css/style.min.css?NEW2">
+    <link rel="stylesheet" href="tpl/css/style.min.css?NEW12">
     <script src="tpl/js/jquery.min.js"></script>
 </head>

@@ -1,14 +1,23 @@
 <div class="post">
-  <h2>
-    <a href="[[~[[+id]]]]">[[+pagetitle]]</a>
-  </h2>
-  <div class="meta">
-    <div class="date">
-      <i class="icon-calendar"></i>
-       [[+publishedon:date:dateRU]]
+    [[+tv.image:isnotempty=`
+    <div class="image">
+        <a href="[[~[[+id]]]]">
+            <img src="[[phpthumbon?input=`[[+tv.image]]`&options=`w=190&h=190&zc=T`]]" alt="">
+        </a>
     </div>
-  </div>
-  <div class="post_content">
-  [[+introtext]]
- </div>
+    `]]
+    <div class="desc [[+tv.image:isempty=`long`]]">
+        <h2>
+            <a href="[[~[[+id]]]]">[[+pagetitle]]</a>
+        </h2>
+        <div class="meta">
+            <div class="date">
+              <i class="icon-calendar"></i>
+               [[+publishedon:date:dateRU]]
+            </div>
+        </div>
+        <div class="post_content">
+        [[+introtext]]
+        </div>
+    </div>
 </div>

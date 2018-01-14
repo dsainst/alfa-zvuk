@@ -1,6 +1,8 @@
 <div id="result">
     <div class="rows">
         [[!pdoPage@najax?
+            &includeTVs=`1` 
+            &includeTVList=`image`
             &parents=`[[*id]]` 
             &limit=`5` 
             &cache=`1`

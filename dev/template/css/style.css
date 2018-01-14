@@ -13,6 +13,9 @@ body {
   font-family: 'Roboto', sans-serif;
   min-width: 1200px;
 }
+.content .btn-more {
+  margin-top: 40px;
+}
 .show-all {
   text-align: center;
   margin: 40px 0;
@@ -364,8 +367,7 @@ body {
 #content {
   /* end of content */
 }
-#content .content .justifyfull,
-#tabs .justifyfull {
+#content .content .justifyfull {
   text-align: justify;
 }
 #content .content .mytable {
@@ -434,6 +436,29 @@ body {
   border-top: 1px solid #e8e8e8;
   padding-top: 20px;
   margin-top: 40px;
+  overflow: hidden;
+}
+#content .post .desc {
+  display: inline-block;
+  float: left;
+  max-width: 660px;
+}
+#content .post .desc h2 {
+  margin-top: 0;
+}
+#content .post .desc.long {
+  max-width: 100%;
+}
+#content .post .image {
+  float: left;
+  display: inline-block;
+  margin: 0 20px 0 0;
+  max-width: 190px;
+}
+#content .post .image img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
 }
 #content .post:first-child {
   border-top: 0;

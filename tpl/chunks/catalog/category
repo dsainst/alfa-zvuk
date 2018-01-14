@@ -80,6 +80,7 @@
                     <img src="tpl/img/svg/az.svg" alt="">
                     <span>Реализованные проекты</span>
                 </div>
+                <div class="realize">
                     [[!pdoPage?
                         &elementClass=`modSnippet`
                         &element=`getResources`
@@ -94,6 +95,7 @@
                     	&sortbyTVType=`integer`
                     	&sortdirTV=`ASC`
                     ]]
+                </div>
                 <div class="show-all">
                     <a href="[[~48]]" class="btn-show">Посмотреть все</a>
                 </div>
