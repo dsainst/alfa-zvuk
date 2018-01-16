@@ -1709,6 +1709,7 @@ ul.pagination li.active a {
   color: #221e1f;
   margin-bottom: 10px;
   max-width: 100%;
+  line-height: 1.2em;
   height: 70px;
   overflow: hidden;
 }
